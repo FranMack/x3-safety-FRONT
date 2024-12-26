@@ -43,7 +43,7 @@ export const ProductsGrid = ({ products }: Props) => {
 console.log("products",filterProducts)
 
   return (
-    <div className=" w-[80%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 efectoReveal">
+    <div className=" w-[80%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 efectoReveal">
       {filterProducts.map((product,i) => (
         <ProductItem key={i} {...product} />
       ))}

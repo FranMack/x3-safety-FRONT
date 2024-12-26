@@ -31,14 +31,14 @@ export const IndustryBanner = () => {
             <IndustryIcon />
             <br />
             <p className="text-[1.5rem] text-primary font-semibold">
-              Industría
+            Metalmecánica
             </p>
           </div>
 
           <div className="h-[10vh] md:h-[15vh]  flex flex-col items-center mr-[5vw]">
             <OilIcon />
             <br />
-            <p className="text-[1.5rem] text-primary font-semibold">Petroleo</p>
+            <p className="text-[1.5rem] text-primary font-semibold">Petrolera</p>
           </div>
 
           <div className="h-[10vh] md:h-[15vh]  flex flex-col items-center mr-[5vw]">

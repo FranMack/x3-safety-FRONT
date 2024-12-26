@@ -27,7 +27,7 @@ export const Slider = ({ gallery }: Props) => {
   };
 
   return (
-    <div className="md:w-full h-[90%] flex flex-col justify-center items-center  ">
+    <div className="w-full h-[90%] flex flex-col justify-center items-center  ">
       <div className="relative overflow-hidden rounded-[15px]  flex items-center w-[90%] h-[100%] border-[1px] border-primary border-collapse">
         <Image
           fill

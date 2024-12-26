@@ -56,7 +56,7 @@ export const Carrousel = () => {
                     {image.title}
                   </h3>
                   <h3 className="text-[3rem] lg:text-[4rem] text-gray-400 font-extralight ">{image.secondTitle}</h3>
-                  <Link href="/#contact" className="bg-primary mt-[4vh] w-fit px-6 py-4 rounded-lg text-[1.8rem]">Contactanos</Link>
+                  <Link href="/#contact" className="bg-primary mt-[4vh] w-fit px-6 py-4 rounded-lg text-[1.8rem] hover:bg-opacity-60 transition-all duration-500">Contactanos</Link>
                 </div>
               </div>
             ))}</>

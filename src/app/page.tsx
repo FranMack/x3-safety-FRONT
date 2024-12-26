@@ -1,9 +1,8 @@
 import {
-  Banner,
+   AboutUs,
   Contact,
   Hero,
   Products,
-  Safety,
   WhatsUpButton,
 } from "@/components";
 
@@ -11,12 +10,12 @@ import { IndustryBanner } from "@/components/commons";
 
 export default function Home() {
   return (
-    <main className="bg-gray-100">
+    <main className="bg-gray-100 overflow-x-hidden">
       <WhatsUpButton />
       <Hero />
       <Products />
-      <Safety />
-      <IndustryBanner/>
+      <AboutUs />
+      <IndustryBanner />
       <Contact />
     </main>
   );

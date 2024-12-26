@@ -92,3 +92,31 @@ button,svg{
     opacity: 1;
   }
 }
+
+
+/* efecto borde que desaparece*/
+
+.hover-border {
+  position: relative;
+  display: inline-block;
+  color: white;
+  border-bottom: 0px solid white; /* Borde inicial */
+  overflow: hidden; /* Ocultar contenido extra */
+}
+
+.hover-border::after {
+  content: 'xxxx'; /* Elemento decorativo */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Borde completo inicialmente */
+  height: 1.5px;
+  background: white;
+  transform-origin: right; /* Punto de inicio del transform */
+  transform: scaleX(1); /* Escala completa al inicio */
+  transition: transform 0.3s ease-out; /* Transición suave */
+}
+
+.hover-border:hover::after {
+  transform: scaleX(0); /* Escala a 0 para ocultar */
+}

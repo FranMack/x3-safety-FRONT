@@ -1,12 +1,31 @@
+import { ButtonContainer } from "@/components/ProductDetails/ButtonContainer";
+import { Modal } from "@/components/ProductDetails/Modal";
 import { Slider } from "@/components/Slider";
 import { productsInfo } from "@/utils/productsInfo";
-import { FaCheck } from "react-icons/fa";
-import { Modal } from "@/components/ProductDetails/Modal";
-import { ButtonContainer } from "@/components/ProductDetails/ButtonContainer";
-import logo from "../../../../public/favicon.png"
+import { Metadata } from "next";
 import Image from "next/image";
+import { FaCheck } from "react-icons/fa";
+import logo from "../../../../public/favicon.png";
 interface Props {
   params: { id: number }; // 'params' es un objeto que contiene el 'id'
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = params;
+  const product = productsInfo[id - 1];
+
+  return {
+    title: product.name,
+    description: product.description,
+    keywords:
+      "herramientas de seguridad, protección laboral, ergonomía, prevención de accidentes, seguridad industrial, protección de operarios, X3 Safety, seguridad en el trabajo",
+    robots: "index, follow",
+
+    viewport: "width=device-width, initial-scale=1.0", // Optimización para dispositivos móviles.
+
+    // Author information
+    authors: { name: "X3 Safety", url: "https://x3safety.com" },
+  };
 }
 
 const ProductPage = ({ params }: Props) => {
@@ -14,25 +33,32 @@ const ProductPage = ({ params }: Props) => {
 
   const product = productsInfo[id - 1];
 
-
-
-
   return (
-    <main className="h-screen w-screen  flex items-center justify-center pt-[10vh]  ">
-      <Image src={logo} alt="logo" width={100} height={100} className="absolute bottom-0 right-0 -z-0 opacity-20"/>
-      <Modal/>
-      <div className="w-[40%] h-full  flex justify-center items-center ">
-        <figure className="relative w-[90%]  aspect-square flex items-center">
+    <main className="relative min-h-screen w-screen  flex flex-col md:flex-row items-center justify-center  pb-[10vh] sm:pb-0  ">
+      <Image
+        src={logo}
+        alt="logo"
+        width={100}
+        height={100}
+        className="absolute bottom-0 right-10 -z-0 opacity-20"
+      />
+      <Modal videoId={product.videoId} />
+      <div className="w-[80%] pt-[10vh] md:w-[40%] h-full  flex justify-center items-center">
+        <figure className="relative w-full md:w-[90%]  aspect-square flex items-center">
           <Slider gallery={product.gallery} />
         </figure>
       </div>
 
-      <div className="w-[40%] h-full px-[2%]  flex flex-col justify-center items-center gap-y-[1vh] ">
-        <h1 className="w-full text-[4rem] font-semibold">{product.name}</h1>
-        <p className="mb-[1vh] text-[1.8rem]  text-gray-600">
+      <div className="w-[80%] md:w-[40%] h-full m px-[2%]  flex flex-col justify-center items-start gap-y-[1vh] ">
+        <h1 className="w-full text-[3rem] md:text-[4rem] font-semibold">
+          {product.name}
+        </h1>
+        <p className="mb-[1vh] text-[1.6rem] md:text-[1.8rem]  text-gray-600">
           {product.description2}
         </p>
-        <h2 className="w-full text-[2.5rem] font-bold ">Características</h2>
+        <h2 className="w-full text-[2rem] md:text-[2.5rem] font-bold ">
+          Características
+        </h2>
         <ul className="text-[1.5rem] flex flex-col gap-y-[2vh]">
           {product.descriptionItems.map((item, i) => {
             return (
@@ -45,7 +71,7 @@ const ProductPage = ({ params }: Props) => {
         </ul>
         <hr className="w-full  my-4  border-primary border-t-2" />
 
-       <ButtonContainer/>
+        <ButtonContainer videoId={product.videoId} pdf={product.pdf} />
       </div>
     </main>
   );

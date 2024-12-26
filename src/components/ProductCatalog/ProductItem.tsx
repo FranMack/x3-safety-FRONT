@@ -32,7 +32,7 @@ export const ProductItem = ({
         <p className=" text-gray-600 mb-4">{description}</p>
         <button
           onClick={handleNavigate}
-          className="bg-primary text-white px-4 py-2 rounded hover:bg-blue-700"
+          className="bg-primary text-white px-4 py-2 rounded hover:bg-[#4c4c4c] transition-all duration-500"
         >
           Ver más
         </button>

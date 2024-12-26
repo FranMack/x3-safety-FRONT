@@ -7,7 +7,11 @@ import YouTube from "react-youtube";
 
 import { MoonLoader } from "react-spinners";
 
-export const Modal = () => {
+interface Props{
+  videoId:string
+}
+
+export const Modal = ({videoId}:Props) => {
   const { modalOpen, toggleModal } = useContext(ModalOpenContext);
   const [loading, setLoading] = useState(true); // Estado de carga
 
@@ -30,9 +34,9 @@ export const Modal = () => {
     <>
       {modalOpen ? (
         <div
-          className={`absolute w-screen h-screen flex flex-col justify-center items-center bg-black bg-opacity-30 z-50`}
+          className={`absolute w-full h-full flex flex-col justify-center items-center bg-black bg-opacity-30 z-50 top-0`}
         >
-          <div className="w-[55%] flex justify-end ">
+          <div className="w-full md:w-[55%] flex justify-end ">
             <IoMdClose onClick={onCloseModal} className="text-[2.5rem]" />
           </div>
           {loading && (
@@ -43,9 +47,9 @@ export const Modal = () => {
           )}{" "}
           {/* Indicador de carga */}
           <YouTube
-            className={`w-1/2 h-1/2 ${loading ? "invisible" : ""}`} // Ocultar mientras carga
+            className={` w-[100%] aspect-[1.77]  md:w-1/2 ${loading ? "invisible" : ""}`} // Ocultar mientras carga
             opts={opts}
-            videoId="1ZHVrYpzhLg"
+            videoId={videoId}
             onReady={handleReady} // Evento para manejar el estado de carga
           />
         </div>

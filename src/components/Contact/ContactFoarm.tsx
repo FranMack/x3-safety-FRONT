@@ -3,6 +3,8 @@ import { useFormik } from "formik";
 import { useState } from "react";
 import BeatLoader from "react-spinners/BeatLoader";
 import * as Yup from "yup";
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { useScrollReveal } from "@/hooks/useScrollReveal ";
 
@@ -56,6 +58,12 @@ export const ContactFoarm = () => {
           throw new Error("Message could not be send");
         }
 
+        toast.success('Mensaje enviado', {
+          style: {backgroundColor: '#b3c62d', color: '#ffff'},
+          hideProgressBar: true,
+          autoClose: 4000,
+        });
+
         singUpForm.resetForm();
         setIsLoading(false);
       } catch (error) {
@@ -74,7 +82,7 @@ export const ContactFoarm = () => {
         <input
           type="text"
           placeholder="Your Name"
-          className={`w-[100%] h-[5vh] px-4 py-2 border rounded-lg focus:outline-none focus:border-primary ${
+          className={`w-[100%] h-[5vh] px-4 py-2 border rounded-lg focus:outline-none focus:border-primary text-[1.5rem] ${
             singUpForm.errors.name && singUpForm.touched.name
               ? "border-red-700"
               : ""
@@ -94,7 +102,7 @@ export const ContactFoarm = () => {
         <input
           type="email"
           placeholder="Your Email"
-          className={`w-[100%] h-[5vh] px-4 py-2 border rounded-lg focus:outline-none focus:border-primary ${
+          className={`w-[100%] h-[5vh] px-4 py-2 border rounded-lg focus:outline-none focus:border-primary text-[1.5rem] ${
             singUpForm.errors.email && singUpForm.touched.email
               ? "border-red-700"
               : ""
@@ -114,7 +122,7 @@ export const ContactFoarm = () => {
         <input
           type="tel"
           placeholder="Your Phone"
-          className={`w-[100%] h-[5vh] px-4 py-2 border rounded-lg focus:outline-none focus:border-primary ${
+          className={`w-[100%] h-[5vh] px-4 py-2 border rounded-lg focus:outline-none focus:border-primary text-[1.5rem] ${
             singUpForm.errors.phone && singUpForm.touched.phone
               ? "border-red-700"
               : ""
@@ -134,7 +142,7 @@ export const ContactFoarm = () => {
         <textarea
           placeholder="Your Message"
           rows={4}
-          className={`w-[100%] h-[15vh] px-4 py-2 border rounded-lg focus:outline-none focus:border-primary ${
+          className={`w-[100%] h-[15vh] px-4 py-2 border rounded-lg focus:outline-none focus:border-primary text-[1.5rem] ${
             singUpForm.errors.message && singUpForm.touched.message
               ? "border-red-700"
               : ""
@@ -152,7 +160,7 @@ export const ContactFoarm = () => {
       </div>
       <button
         type="submit"
-        className="w-full bg-primary text-white py-5 rounded-lg hover:bg-blue-500 transition text-[1.5rem]"
+        className="w-full bg-primary text-white py-5 rounded-lg text-[1.8rem] hover:bg-opacity-60 transition-all duration-500"
       >
         {isLoading ? (
           <BeatLoader color={"white"} speedMultiplier={0.4} />

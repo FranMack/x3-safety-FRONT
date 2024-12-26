@@ -25,8 +25,8 @@ export const ProductBox = ({image,alt,title,buttonName,path}:Props) => {
         enviarnos su pedido de cotización. Visite y descubra toda
         nuestra línea de productos disponibles.
       </p>
-      <div className="mt-[2vh] w-fit border-collapse border-b-2 border-white">
-      <Link href={`${path}`} className="text-[1.6rem] ">{buttonName}</Link>
+      <div className="mt-[2vh] w-fit border-collapse hover-border">
+      <Link href={`${path}`} className="text-[1.6rem]" target={path.includes("ficha") ?"_blank":""}>{buttonName}</Link>
         </div>
     </div>
     <div className="absolute w-full h-full z-10 bg-black opacity-70 top-0 rounded-[15px]"></div>

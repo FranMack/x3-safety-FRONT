@@ -10,7 +10,7 @@ const ProductsPage = () => {
     <section id="products" className=" w-screen min-h-[100vh]  bg-gray-100 ">
      <AsideBar/>
 
-      <div className="w-[78%] ml-[22%] py-[20vh]  flex flex-col items-center ">
+      <div className="w-full md:w-[78%] md:ml-[22%] pb-[5vh] md:py-[10vh] lg:py-[20vh]  flex flex-col items-center ">
         <div className="w-[90%] ml-[10%]">
           <Title title="Productos" />
         </div>
