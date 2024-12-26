@@ -11,7 +11,7 @@ import { MenuMobileContext } from "@/context/menuMobile.context";
 
 export const Navbar = () => {
 
-  const {menuMobileOpen,toggleMenuMobile}=useContext(MenuMobileContext)
+  const {toggleMenuMobile}=useContext(MenuMobileContext)
 
 
   const [scrollPosition, setScrolPosition] = useState<number>(0);
