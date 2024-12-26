@@ -21,7 +21,7 @@ export const MineryIcon=()=>{
 
 export const LogisticIcon=()=>{
     return(
-        <svg height="100%" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs>  </defs> <g data-name="23. Warehouse" id="_23._Warehouse"> <path classNameName="cls-1" d="M31,30V15A15,15,0,0,0,1,15V30a1,1,0,0,0,0,2H31a1,1,0,0,0,0-2ZM18,24H14V20h4Zm-5,2h2v4H11V26Zm4,4V26h4v4Zm6,0V25a1,1,0,0,0-1-1H20V19a1,1,0,0,0-1-1H13a1,1,0,0,0-1,1v5H10a1,1,0,0,0-1,1v5H7V16H25V30Zm4,0V15a1,1,0,0,0-1-1H6a1,1,0,0,0-1,1V30H3V15a13,13,0,0,1,26,0V30Z"></path> <path classNameName="cls-2" d="M20,5a1,1,0,0,0-1-1H13a1,1,0,0,0-.38.08,1,1,0,0,0-.54.54A1,1,0,0,0,12,5v6a1,1,0,0,0,1,1h6a1,1,0,0,0,.38-.08,1,1,0,0,0,.54-.54A1,1,0,0,0,20,11ZM18,8.59,15.41,6H18ZM14,7.41,16.59,10H14Z"></path> </g> </g></svg>
+        <svg height="100%" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs>  </defs> <g data-name="23. Warehouse" id="_23._Warehouse"> <path className="cls-1" d="M31,30V15A15,15,0,0,0,1,15V30a1,1,0,0,0,0,2H31a1,1,0,0,0,0-2ZM18,24H14V20h4Zm-5,2h2v4H11V26Zm4,4V26h4v4Zm6,0V25a1,1,0,0,0-1-1H20V19a1,1,0,0,0-1-1H13a1,1,0,0,0-1,1v5H10a1,1,0,0,0-1,1v5H7V16H25V30Zm4,0V15a1,1,0,0,0-1-1H6a1,1,0,0,0-1,1V30H3V15a13,13,0,0,1,26,0V30Z"></path> <path className="cls-2" d="M20,5a1,1,0,0,0-1-1H13a1,1,0,0,0-.38.08,1,1,0,0,0-.54.54A1,1,0,0,0,12,5v6a1,1,0,0,0,1,1h6a1,1,0,0,0,.38-.08,1,1,0,0,0,.54-.54A1,1,0,0,0,20,11ZM18,8.59,15.41,6H18ZM14,7.41,16.59,10H14Z"></path> </g> </g></svg>
     )
 }
 
