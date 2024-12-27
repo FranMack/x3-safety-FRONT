@@ -1,26 +1,31 @@
 "use client";
+import { LanguageContext } from "@/context/language.context";
+import { MenuMobileContext } from "@/context/menuMobile.context";
+import { getCookieLanguage } from "@/helpers/cookiesHelpers";
 import Image from "next/image";
 import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
-import logo from "../../../public/logo.png";
 import britishFlag from "../../../public/british_flag.webp";
+import logo from "../../../public/logo.png";
 import spainFlag from "../../../public/spain_flag.webp";
 import { FlagButton } from "./FlagButton";
 import { MobileMenu } from "./MobileMenu";
-import { MenuMobileContext } from "@/context/menuMobile.context";
 
 export const Navbar = () => {
-
-  const {toggleMenuMobile}=useContext(MenuMobileContext)
-
+  const { toggleMenuMobile } = useContext(MenuMobileContext);
 
   const [scrollPosition, setScrolPosition] = useState<number>(0);
+
+  const { language, setLanguage, onToggleLanguage } =
+    useContext(LanguageContext);
+
   useEffect(() => {
     function sizeHandler() {
       setScrolPosition(window.scrollY);
     }
-    window.addEventListener("scroll", sizeHandler);
 
+    setLanguage(getCookieLanguage() as string);
+    window.addEventListener("scroll", sizeHandler);
     return window.addEventListener("scroll", sizeHandler);
   }, []);
 
@@ -36,28 +41,46 @@ export const Navbar = () => {
         </Link>
         <div className="hidden md:flex space-x-10 items-center text-[1.8rem]">
           <Link href="/#home" className="hover:text-primary py-2">
-            Inicio
+            {language === "spanish" ? "Inicio" : "Home"}
           </Link>
 
           <Link href="/products" className="hover:text-primary py-2">
-            Productos
+            {language === "spanish" ? "Productos" : "Products"}
           </Link>
           <Link href="/#aboutUs" className="hover:text-primary py-2">
-            Nosotros
+            {language === "spanish" ? "Nosotros" : "About Us"}
           </Link>
 
           <Link href="/#contact" className="hover:text-primary py-2">
-            Contacto
+            {language === "spanish" ? "Contacto" : "Contact"}
           </Link>
           <div className="flex space-x-5 h-[4.5vh] ">
-            <FlagButton flag={spainFlag} country="span" />
-            <FlagButton flag={britishFlag} country="england" />
+            <div
+              className={`h-full ${language !== "spanish" ? "opacity-50" : ""}`}
+            >
+              <FlagButton
+                onClick={onToggleLanguage}
+                flag={spainFlag}
+                country="span"
+              />
+            </div>
+            <div
+              className={`h-full ${language === "spanish" ? "opacity-50" : ""}`}
+            >
+              <FlagButton
+                onClick={onToggleLanguage}
+                flag={britishFlag}
+                country="england"
+              />
+            </div>
           </div>
         </div>
 
         <button
           className="md:hidden text-[2.5rem]"
-          onClick={()=>{toggleMenuMobile()}}
+          onClick={() => {
+            toggleMenuMobile();
+          }}
         >
           ☰
         </button>

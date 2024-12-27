@@ -1,26 +1,40 @@
 "use client"
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Link from "next/link";
+import banner1 from "../../../public/hero/banner_1_carrousel.webp"
+import banner2 from "../../../public/hero/banner.2 carrousel.webp"
+import banner3 from "../../../public/hero/banner 3 carrousel.webp"
+import { LanguageContext } from "@/context/language.context";
 const carouselImages = [
+  {
+    path: banner1,
+    title: "Ergonomics and safety",
+    secondTitle: "Designed to protect what matters most.",
+    titulo: "Ergonomía y seguridad",
+    segundoTitulo: "Pensado para proteger lo esencial.",
+  },
+  {
+    path: banner2,
+    title: "Tools that care",
+    secondTitle: "Design thought to protect what matters most.",
+    titulo: "Herramientas que cuidan",
+    segundoTitulo: "Diseño pensado para proteger lo esencial.",
+  },
+  {
+    path: banner3,
+    title: "Protect what matters most",
+    secondTitle: "Design thought to protect what matters most.",
+    titulo: "Protege lo más importante",
+    segundoTitulo: "Diseño pensado para proteger lo esencial.",
+  },
+];
 
-    {
-      path: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc",
-      title: "Ergonomía y seguridad",
-      secondTitle:"Pensado para proteger lo esencial."
-    },
-    {
-      path: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122",
-      title: "Herramientas que cuidan",
-      secondTitle:"Diseño pensado para proteger lo esencial."
-    },
-    {
-      path: "https://images.unsplash.com/photo-1581783898377-1c85bf937427",
-      title: "Protege lo más importante",
-      secondTitle:"Diseño pensado para proteger lo esencial."
-    },
-  ];
 export const Carrousel = () => {
+
+  const { language, setLanguage, onToggleLanguage } =
+  useContext(LanguageContext);
+  
     const [currentSlide, setCurrentSlide] = useState(0);
     
      useEffect(() => {
@@ -53,10 +67,10 @@ export const Carrousel = () => {
                 <div className="relative h-[40%] flex flex-col justify-center px-[5%] pt-[10vh] z-20 text-white  ">
                   <h2 className="mb-[1vh] text-[2rem] text-primary text-opacity-75 font-medium">X3-SAFETY</h2>
                   <h3 className="text-[4rem] lg:text-[6rem] lg:leading-[6.5rem]  font-semibold  uppercase ">
-                    {image.title}
+                    {language==="spanish"? image.titulo:image.title}
                   </h3>
-                  <h3 className="text-[3rem] lg:text-[4rem] text-gray-400 font-extralight ">{image.secondTitle}</h3>
-                  <Link href="/#contact" className="bg-primary mt-[4vh] w-fit px-6 py-4 rounded-lg text-[1.8rem] hover:bg-opacity-60 transition-all duration-500">Contactanos</Link>
+                  <h3 className="text-[3rem] lg:text-[4rem] text-gray-400 font-extralight ">  {language==="spanish"? image.segundoTitulo:image.secondTitle}</h3>
+                  <Link href="/#contact" className="bg-primary mt-[4vh] w-fit px-6 py-4 rounded-lg text-[1.8rem] hover:bg-opacity-60 transition-all duration-500">{language==="spanish"? "Contactanos":"Contact Us"}</Link>
                 </div>
               </div>
             ))}</>

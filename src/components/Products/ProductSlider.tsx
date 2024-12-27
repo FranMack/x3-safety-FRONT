@@ -1,14 +1,16 @@
 "use client";
+import { LanguageContext } from "@/context/language.context";
 import { useScrollReveal } from "@/hooks/useScrollReveal ";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 interface ProductImage {
   image: StaticImageData;
   title: string;
   text?: string;
+  texto?: string;
   path: string;
 }
 
@@ -17,6 +19,7 @@ interface Props {
 }
 
 export const ProductSlider = ({ gallery }: Props) => {
+  const { language } = useContext(LanguageContext);
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -49,7 +52,7 @@ export const ProductSlider = ({ gallery }: Props) => {
             className={`absolute ${
               index === currentSlide
                 ? "opacity-100 z-10 translate-x-0"
-                : "translate-x-[50vw] opacity-0 z-0"
+                : "translate-x-[10vw] opacity-0 z-0"
             } transition-all duration-1000 overflow-hidden sm:rounded-[15px]  flex justify-center md:justify-start items-center w-[100%] h-[100%] border-[1px] border-primary border-collapse bg-black bg-opacity-80`}
           >
             <div className="min-h-[50%] w-[70%] sm:w-[40%] md:ml-[5%] flex flex-col justify-center gap-y-[2vh] z-10 text-white ">
@@ -57,17 +60,19 @@ export const ProductSlider = ({ gallery }: Props) => {
                 ref={refTitle}
                 className="bg-primary w-fit px-3 py-3 text-[2rem] text-black font-medium"
               >
-                Destacado
+                {language === "spanish" ? "Destacado" : "Featured"}
               </strong>
               <h4 className="text-[4rem]">{item.title}</h4>
               <p className="text-[1.6rem] md:w-[80%]">
-                {gallery[currentSlide].text}
+                {language === "spanish"
+                  ? gallery[currentSlide].texto
+                  : gallery[currentSlide].text}
               </p>
 
               <div className="mt-[3vh] w-fit hover-border">
                 <Link href={item.path} className="text-[1.6rem]  ">
                   {" "}
-                  VER PRODUCTO
+                  {language === "spanish" ? "VER PRODUCTO" : "VIEW PRODUCT"}
                 </Link>
               </div>
             </div>

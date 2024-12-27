@@ -1,5 +1,6 @@
 import { Footer, Navbar } from "@/components";
 import { FilterProductsContextProvider } from "@/context/filterProduct.context";
+import { LanguageContextProvider } from "@/context/language.context";
 import { MenuMobileContextProvider } from "@/context/menuMobile.context";
 import { ModalOpenContextProvider } from "@/context/modal.context";
 import type { Metadata } from "next";
@@ -59,10 +60,12 @@ export default function RootLayout({
         <FilterProductsContextProvider>
           <MenuMobileContextProvider>
             <ModalOpenContextProvider>
-              <Navbar />
+              <LanguageContextProvider>
+                <Navbar />
 
-              {children}
-              <Footer />
+                {children}
+                <Footer />
+              </LanguageContextProvider>
             </ModalOpenContextProvider>
           </MenuMobileContextProvider>
         </FilterProductsContextProvider>
