@@ -4,7 +4,5 @@ export { Navbar } from "./commons/Navbar";
 export { WhatsUpButton } from "./commons/WhatsUpButton";
 export { Contact } from "./Contact/Contact";
 export { Footer } from "./commons/Footer";
-export { FrecuentQuestions } from "./FrecuentQuestions";
 export { Hero } from "./Hero/Hero";
-export { Location } from "./Location";
 export { Products } from "./Products/Products";

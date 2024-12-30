@@ -1,14 +1,16 @@
 "use client";
 import { useFormik } from "formik";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import BeatLoader from "react-spinners/BeatLoader";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import * as Yup from "yup";
-import {toast} from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
+import { LanguageContext } from "@/context/language.context";
 import { useScrollReveal } from "@/hooks/useScrollReveal ";
 
 export const ContactFoarm = () => {
+  const { language } = useContext(LanguageContext);
   const refContactForm = useScrollReveal<HTMLFormElement>("efectoReveal");
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -21,18 +23,48 @@ export const ContactFoarm = () => {
     },
     validationSchema: Yup.object({
       name: Yup.string()
-        .min(2, "El nombre debe tener al menos 2 caracteres")
-        .required("Campo requerido"),
+        .min(
+          2,
+          `${
+            language === "spanish"
+              ? "El nombre debe tener al menos 2 caracteres"
+              : "The name must be at least 2 characters"
+          }`
+        )
+        .required(
+          `${language === "spanish" ? "Campo requerido" : "Required field"}`
+        ),
       message: Yup.string()
-        .min(2, "El apellido debe tener al menos 2 caracteres")
-        .required("Campo requerido"),
-      email: Yup.string().email("Email invalido").required("Campo requerido"),
+        .min(
+          2,
+          `${
+            language === "spanish"
+              ? "El mensaje debe tener al menos 2 caracteres"
+              : "The message must be at least 2 characters"
+          }`
+        )
+        .required(
+          `${language === "spanish" ? "Campo requerido" : "Required field"}`
+        ),
+      email: Yup.string()
+        .email(
+          `${language === "spanish" ? "Email no valido" : "Invalid email"}`
+        )
+        .required(
+          `${language === "spanish" ? "Campo requerido" : "Required field"}`
+        ),
       phone: Yup.string()
         .matches(
           /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/,
-          "Número de teléfono no válido"
+          `${
+            language === "spanish"
+              ? "Número de telefono invalido"
+              : "Invalid phone number"
+          }`
         )
-        .required("Campo requerido"),
+        .required(
+          `${language === "spanish" ? "Campo requerido" : "Required field"}`
+        ),
     }),
 
     onSubmit: async (values) => {
@@ -58,8 +90,8 @@ export const ContactFoarm = () => {
           throw new Error("Message could not be send");
         }
 
-        toast.success('Mensaje enviado', {
-          style: {backgroundColor: '#b3c62d', color: '#ffff'},
+        toast.success("Mensaje enviado", {
+          style: { backgroundColor: "#b3c62d", color: "#ffff" },
           hideProgressBar: true,
           autoClose: 4000,
         });
@@ -76,13 +108,13 @@ export const ContactFoarm = () => {
     <form
       ref={refContactForm}
       onSubmit={singUpForm.handleSubmit}
-      className="w-full md:w-[80%] mx-auto p-10 md:p-20  rounded-[12px] bg-primary bg-opacity-30  shadow-lg"
+      className="w-full lg:w-[80%] mx-auto p-10 md:p-20  rounded-[12px] bg-primary bg-opacity-30  shadow-lg"
     >
       <div className="mb-6 w-[100%]  ">
         <input
           type="text"
-          placeholder="Your Name"
-          className={`w-[100%] h-[5vh] px-4 py-2 border rounded-lg focus:outline-none focus:border-primary text-[1.5rem] ${
+          placeholder={language === "spanish" ? "Tu Nombre" : "Your Name"}
+          className={`w-[100%] h-[5vh] md:h-[10vh] lg:h-[5vh] px-4 py-2 border rounded-lg focus:outline-none focus:border-primary text-[1.5rem] ${
             singUpForm.errors.name && singUpForm.touched.name
               ? "border-red-700"
               : ""
@@ -101,8 +133,8 @@ export const ContactFoarm = () => {
       <div className="mb-6 w-[100%] ">
         <input
           type="email"
-          placeholder="Your Email"
-          className={`w-[100%] h-[5vh] px-4 py-2 border rounded-lg focus:outline-none focus:border-primary text-[1.5rem] ${
+          placeholder={language === "spanish" ? "Tu email" : "Your email"}
+          className={`w-[100%] h-[5vh] md:h-[10vh] lg:h-[5vh] px-4 py-2 border rounded-lg focus:outline-none focus:border-primary text-[1.5rem] ${
             singUpForm.errors.email && singUpForm.touched.email
               ? "border-red-700"
               : ""
@@ -121,8 +153,12 @@ export const ContactFoarm = () => {
       <div className="mb-6 w-[100%]  ">
         <input
           type="tel"
-          placeholder="Your Phone"
-          className={`w-[100%] h-[5vh] px-4 py-2 border rounded-lg focus:outline-none focus:border-primary text-[1.5rem] ${
+          placeholder={
+            language === "spanish"
+              ? "Tu número de teléfono"
+              : "Your phone number"
+          }
+          className={`w-[100%] h-[5vh] md:h-[10vh] lg:h-[5vh] px-4 py-2 border rounded-lg focus:outline-none focus:border-primary text-[1.5rem] ${
             singUpForm.errors.phone && singUpForm.touched.phone
               ? "border-red-700"
               : ""
@@ -140,9 +176,9 @@ export const ContactFoarm = () => {
       </div>
       <div className="mb-6 w-[100%] ">
         <textarea
-          placeholder="Your Message"
+          placeholder={language === "spanish" ? "Tu mensaje" : "Your message"}
           rows={4}
-          className={`w-[100%] h-[15vh] px-4 py-2 border rounded-lg focus:outline-none focus:border-primary text-[1.5rem] ${
+          className={`w-[100%] h-[15vh] md:h-[25vh] lg:h-[15vh] px-4 py-2 border rounded-lg focus:outline-none focus:border-primary text-[1.5rem] ${
             singUpForm.errors.message && singUpForm.touched.message
               ? "border-red-700"
               : ""
@@ -165,7 +201,7 @@ export const ContactFoarm = () => {
         {isLoading ? (
           <BeatLoader color={"white"} speedMultiplier={0.4} />
         ) : (
-          "Enviar"
+          `${language === "spanish" ? "Enviar" : "Send"}`
         )}
       </button>
     </form>

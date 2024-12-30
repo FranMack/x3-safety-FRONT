@@ -55,26 +55,27 @@ export const ProductSlider = ({ gallery }: Props) => {
                 : "translate-x-[10vw] opacity-0 z-0"
             } transition-all duration-1000 overflow-hidden sm:rounded-[15px]  flex justify-center md:justify-start items-center w-[100%] h-[100%] border-[1px] border-primary border-collapse bg-black bg-opacity-80`}
           >
-            <div className="min-h-[50%] w-[70%] sm:w-[40%] md:ml-[5%] flex flex-col justify-center gap-y-[2vh] z-10 text-white ">
+            <div className="min-h-[50%] w-[70%] sm:w-[40%] md:w-[60%] lg:w-[40%] md:ml-[8%] flex flex-col justify-center gap-y-[2vh] z-10 text-white ">
               <strong
                 ref={refTitle}
-                className="bg-primary w-fit px-3 py-3 text-[2rem] text-black font-medium"
+                className="bg-primary w-fit px-3 py-3 text-[1.5rem] lg:text-[2rem] text-black font-medium"
               >
                 {language === "spanish" ? "Destacado" : "Featured"}
               </strong>
-              <h4 className="text-[4rem]">{item.title}</h4>
-              <p className="text-[1.6rem] md:w-[80%]">
+              <h4 className="text-[3rem] lg:text-[4rem]">{item.title}</h4>
+              <p className="text-[1.6rem] lg:text-[2rem] md:w-[80%] ">
                 {language === "spanish"
                   ? gallery[currentSlide].texto
                   : gallery[currentSlide].text}
               </p>
 
-              <div className="mt-[3vh] w-fit hover-border">
-                <Link href={item.path} className="text-[1.6rem]  ">
-                  {" "}
-                  {language === "spanish" ? "VER PRODUCTO" : "VIEW PRODUCT"}
-                </Link>
-              </div>
+              <Link
+                href={item.path}
+                className="w-fit mt-[3vh] text-[1.6rem] md:text-[1.4rem] lg:text-[1.6rem] hover-border"
+              >
+                {" "}
+                {language === "spanish" ? "VER PRODUCTO" : "VIEW PRODUCT"}
+              </Link>
             </div>
 
             <Image

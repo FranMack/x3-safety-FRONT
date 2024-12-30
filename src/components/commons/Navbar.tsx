@@ -32,14 +32,14 @@ export const Navbar = () => {
   return (
     <nav
       className={`fixed ${
-        scrollPosition > 1 ? "bg-opacity-90" : "lg:h-[12vh]"
-      } transition-height  duration-500 h-[7vh]  flex items-center bg-backgroundColor text-black  w-full z-50 text-[1.7rem]`}
+        scrollPosition > 1 ? "bg-opacity-90 lg:h-[7vh]" : ""
+      } transition-height  duration-500 h-[7vh] md:h-[12vh]  flex items-center bg-backgroundColor text-black  w-full z-50 text-[1.7rem]`}
     >
       <div className="w-full h-[60%] px-5 flex justify-between items-center ">
         <Link href="/#home" className="h-full aspect-[4]  relative ">
           <Image className="absolute" src={logo} alt="logo" fill />
         </Link>
-        <div className="hidden md:flex space-x-10 items-center text-[1.8rem]">
+        <div className="hidden lg:flex space-x-10 items-center text-[1.8rem]">
           <Link href="/#home" className="hover:text-primary py-2">
             {language === "spanish" ? "Inicio" : "Home"}
           </Link>
@@ -77,7 +77,7 @@ export const Navbar = () => {
         </div>
 
         <button
-          className="md:hidden text-[2.5rem]"
+          className="lg:hidden text-[2.5rem]"
           onClick={() => {
             toggleMenuMobile();
           }}

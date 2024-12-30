@@ -42,7 +42,7 @@ export const Modal = ({videoId}:Props) => {
           {loading && (
             <div className="absolute w-1/2 h-1/2 flex flex-col justify-center items-center bg-black opacity-40">
               <MoonLoader color="#ffff" size={55} />
-              <p className="text-white text-[2rem]">Cargando</p>
+              <p className="text-white text-[2rem]">Loading</p>
             </div>
           )}{" "}
           {/* Indicador de carga */}

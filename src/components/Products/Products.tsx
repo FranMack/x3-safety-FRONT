@@ -1,6 +1,6 @@
 import { productSliderInfo } from "@/utils/productsSlider";
-import background1 from "../../../public/catalogo online.webp";
-import background2 from "../../../public/ficha tecnica.webp";
+import background1 from "../../../public/catalogo-1600-x-600.webp";
+import background2 from "../../../public/ficha-tecnica-1600-x-600.webp";
 import { Title } from "../commons";
 import { ProductBox } from "./ProductBox";
 import { ProductSlider } from "./ProductSlider";
@@ -17,8 +17,8 @@ const productBox = [
     titulo: "Catálogo Online",
     image: background1,
     alt: "Background catálogo",
-    text: "Tools designed to improve operator safety in work environments involving the handling of heavy equipment or that may pose dangers to hands and the body.",
-    texto: "Herramientas diseñadas para mejorar la seguridad de los operadores en entornos de trabajo que implican manipulación de equipos pesados o que pueden ser peligrosos para las manos y el cuerpo.",
+    text: "Click here to explore our full product catalog and discover all the options available to you.",
+    texto: "Haz clic aquí para explorar nuestro catálogo completo de productos y descubrir todas las opciones disponibles para ti.",
     buttonName: "VIEW CATALOG",
     botonNombre:"VER CATÁLOGO",
     path: "/products",
@@ -28,8 +28,8 @@ const productBox = [
     titulo: "Ficha Técnica",
     image: background2,
     alt: "Background ficha técnica",
-    text: "Tools designed to improve operator safety in work environments involving the handling of heavy equipment or that may pose dangers to hands and the body.",
-    texto: "Herramientas diseñadas para mejorar la seguridad de los operadores en entornos de trabajo que implican manipulación de equipos pesados o que pueden ser peligrosos para las manos y el cuerpo.",
+    text: "Click here to download the technical sheet of our products and obtain all the detailed information you need.",
+    texto: "Haz clic aquí para descargar la ficha técnica de nuestros productos y obtener toda la información detallada que necesitas.",
     buttonName: "DOWNLOAD TECHNICAL SHEET",
     botonNombre:"DESCARGAR FICHA TÉCNICA",
     path: "/fichas_tecnicas/ficha_productos.pdf",

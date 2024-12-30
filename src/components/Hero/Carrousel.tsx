@@ -3,9 +3,9 @@ import { LanguageContext } from "@/context/language.context";
 import Image from "next/image";
 import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
-import banner3 from "../../../public/hero/banner 3 carrousel.webp";
-import banner2 from "../../../public/hero/banner.2 carrousel.webp";
-import banner1 from "../../../public/hero/banner_1_carrousel.webp";
+import banner3 from "../../../public/hero/carrousel-1.webp";
+import banner2 from "../../../public/hero/carrousel-2.webp";
+import banner1 from "../../../public/hero/carrousel-3.webp";
 const carouselImages = [
   {
     path: banner1,
@@ -53,7 +53,7 @@ export const Carrousel = () => {
           }`}
         >
           {/* Imagen de fondo */}
-          <figure className="absolute inset-0 w-full h-full brightness-50 ">
+          <figure className="absolute inset-0 w-full h-full brightness-800 ">
             <Image
               fill
               className="w-full h-full object-cover"

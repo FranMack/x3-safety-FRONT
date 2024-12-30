@@ -1,26 +1,34 @@
 "use client";
+import { LanguageContext } from "@/context/language.context";
 import { useScrollReveal } from "@/hooks/useScrollReveal ";
+import { useContext } from "react";
 import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { MdPhone } from "react-icons/md";
 
+const titulo = " ¡Estamos aquí para ayudarte!";
+
+  const texto =" Si necesitas más información sobre nuestras herramientas o tienes alguna  consulta, no dudes en contactarnos. Puedes hacerlo a través del  formulario de contacto o, si prefieres, por los teléfonos y correos electrónicos que encontrarás a continuación. Nuestro equipo estará encantado de atenderte.";
+
+  const title = "We are here to help you!";
+
+const text = "If you need more information about our tools or have any questions, do not hesitate to contact us. You can do so through the contact form or, if you prefer, by the phone numbers and email addresses listed below. Our team will be happy to assist you.";
+
+
 export const ContactInfo = () => {
+  const { language } = useContext(LanguageContext);
   const refContactInfo = useScrollReveal<HTMLDivElement>("efectoReveal");
 
   return (
     <div ref={refContactInfo}>
       <h3 className="text-[2.5rem] text-primary font-semibold">
-        ¡Estamos aquí para ayudarte!
+      {language==="spanish"?titulo:title}
       </h3>
       <br />
       <p className="text-[1.8rem]">
-        Si necesitas más información sobre nuestras herramientas o tienes alguna
-        consulta, no dudes en contactarnos. Puedes hacerlo a través del
-        formulario de contacto o, si prefieres, por los teléfonos y correos
-        electrónicos que encontrarás a continuación. Nuestro equipo estará
-        encantado de atenderte.
+      {language==="spanish"?texto:text}
       </p>
       <br />
-      <h5 className="text-[1.8rem] font-semibold text-primary">Contacto</h5>
+      <h5 className="text-[1.8rem] font-semibold text-primary"> {language==="spanish"?"Contacto":"Contact"}</h5>
       <ul className="flex flex-col gap-y-[2vh] mt-[2vh] text-[1.5rem]">
         <li className="flex gap-x-[1vw]">
           <MdPhone size={20} className="text-primary" />{" "}
