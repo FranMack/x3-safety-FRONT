@@ -45,8 +45,8 @@ const industries = [
   },
 ];
 
-const titulo = "Presentes en la industria";
-const title = "Presents in the industry";
+const titulo = "Presente en las principales industrias ";
+const title = "Present in the main industries";
 
 export const IndustryBanner = () => {
   const { language } = useContext(LanguageContext);

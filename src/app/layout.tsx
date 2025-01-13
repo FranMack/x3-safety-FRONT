@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 import { Barlow } from "next/font/google";
 import "./globals.css";
 
-const roboto = Barlow({
+const barlow = Barlow({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
@@ -56,7 +56,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.png" />
       </head>
-      <body className={roboto.className}>
+      <body className={barlow.className}>
         <FilterProductsContextProvider>
           <MenuMobileContextProvider>
             <ModalOpenContextProvider>

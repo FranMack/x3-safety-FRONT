@@ -1,39 +1,37 @@
 "use client";
 import { LanguageContext } from "@/context/language.context";
 import { useScrollReveal } from "@/hooks/useScrollReveal ";
-import Image from "next/image";
+import { CheckIcon, MarksIcon } from "@/icons/icons";
 import { useContext } from "react";
-import { FaChevronRight } from "react-icons/fa";
-import operario from "../../public/operario.png";
 import { Title } from "./commons";
 
 const title = "About Us";
 const titulo = "Quienes somos";
 
-const secondTitle = "Eliminate the risk of operational accidents";
-const segundotitulo = "Eliminar el riesgo de accidentes operativos.";
-
-const text =
-  "X3Safety is a company specialized in developing and manufacturing products to improve and guarantee operational safety in various economic activities.Aimed at providing better operating conditions, the products are manufactured in accordance with the  main technical standards and follow strict quality control to guarantee manufacturing excellence.";
-const texto =
-  "X3Safety es una empresa especializada en el desarrollo y fabricación de productos para mejorar y garantizar la seguridad operativa en diversas actividades económicas. Con el objetivo de brindar mejores condiciones de operación, los productos se fabrican de acuerdo con los principales estándares técnicos y siguen un estricto control de calidad para garantizar la excelencia en la fabricación.";
-
-const misionItems = [
+const cardsInfo = [
   {
-    item: "Prevents workplace accidents and injuries",
-    articulo: "Previene accidentes e incidentes en el lugar de trabajo",
+    icon: "",
+    titulo: "Innovación",
+    title: "Innovation",
+    texto:
+      "Constante para llegar más lejos siempre. Estamos a la vanguardia en cada una de nuestras áreas. La innovación es uno de nuestros mayores diferenciales, ya que trabajamos con creaciones únicas y personalizadas en caso de ser necesario.",
+    text: "Constantly striving to go further. We are at the forefront in each of our areas. Innovation is one of our greatest differentiators, as we work with unique and customized creations when necessary.",
   },
   {
-    item: "Increases operational efficiency",
-    articulo: "Incrementa la eficiencia operativa",
+    icon: "",
+    titulo: "Compromiso",
+    title: "Commitment",
+    texto:
+      "Con nuevas ideas, pero manteniendo los mismos ideales. Estamos comprometidos con la innovación, el medio ambiente y el crecimiento permanente, manteniendo los altos estándares de calidad, seguridad y tecnología.",
+    text: "With new ideas while keeping the same ideals. We are committed to innovation, the environment, and continuous growth, maintaining high standards of quality, safety, and technology.",
   },
   {
-    item: "Reduces equipment damage and maintenance costs",
-    articulo: "Reduce daños al equipo y costos de mantenimiento",
-  },
-  {
-    item: "Ensures compliance with safety regulations",
-    articulo: "Garantiza el cumplimiento de las normativas de seguridad",
+    icon: "",
+    titulo: "Orientación ",
+    title: "Guidance",
+    texto:
+      "Con cada colaborador, en cada industria. Acompañamos a nuestros clientes en sus actividades haciendo sus operaciones más seguras.",
+    text: "With each collaborator, in every industry. We support our clients in their activities, making their operations safer.",
   },
 ];
 
@@ -41,43 +39,58 @@ export const AboutUs = () => {
   const { language } = useContext(LanguageContext);
   const refAboutUs = useScrollReveal<HTMLDivElement>("efectoReveal");
   return (
-    <section id="aboutUs" className="h-auto w-screen pb-[10vh] bg-gray-100">
+    <section
+      ref={refAboutUs}
+      id="aboutUs"
+      className="h-auto w-screen pb-[10vh] bg-gray-100 py-[10vh] "
+    >
       <div className="w-[80%] mx-auto">
-        <Title title={language === "spanish" ? titulo : title} />
+
+      <Title title={language === "spanish" ? titulo : title} />
       </div>
-      <div className=" w-full md:w-[80%] h-auto mx-auto ">
-        <div
-          ref={refAboutUs}
-          className="w-full h-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-primary bg-opacity-20 shadow-lg  rounded-br-[50px]"
-        >
-          <div className="relative w-full  h-[40vh] md:h-[80vh]">
-            <Image
-              src={operario}
-              alt="Safe Load Handling"
-              fill
-              className="absolute"
-            />
+      <div className=" w-[80%] min-h-[80vh]  mx-auto  ">
+        <div className="w-full min-h-[20vh]  flex flex-col md:flex-row  mb-[5vh] gap-y-[5vh]  ">
+          <div className="w-full md:w-[32%] min-h-[20vh]  flex justify-center items-center bg-primary bg-opacity-10 ">
+            <div>
+              <h3 className="text-[5rem] font-semibold text-primary text-center">
+                X3 <span className="text-[#454344] text-[4.5rem]">SAFETY</span>
+              </h3>
+            </div>
           </div>
-          <div className=" h-auto flex flex-col justify-start gap-y-[2vh] items-start py-[5%] lg:py-[10%] px-[10%] md:px[5%] ">
-            <h3 className="text-[2.4rem] lg:text-[3rem] font-bold ">
-              {language === "spanish" ? segundotitulo : secondTitle}
-            </h3>
-            <p className="mb-2 md:mb-4 text-[1.5rem] ">
-              {language === "spanish" ? texto : text}
+          <div className="w-full md:w-[68%]  min-h-[20vh] flex justify-center items-center md:px-[5%] py-[3%] gap-x-[1vw] ">
+            <div className="hidden md:visible w-[250px] h-full ">
+              <MarksIcon />
+            </div>
+            <p className="text-[1.8rem] md:text-[2rem]">
+              Somos una empresa especializada en el desarrollo y fabricación de
+              productos diseñados para mejorar y garantizar la seguridad
+              operativa en diversos entornos profesionales. Con el objetivo de
+              ofrecer las mejores soluciones, fabricamos nuestros productos bajo
+              los máximos estándares normativos y políticas de calidad.
             </p>
-            <ul className="space-y-8 text-[1.5rem]">
-              {misionItems.map((item) => {
-                return (
-                  <li key={item.articulo} className="flex items-center">
-                    <FaChevronRight className=" mr-2 text-primary" />
-                    <span>
-                      {language === "spanish" ? item.articulo : item.item}
-                    </span>
-                  </li>
-                );
-              })}
-            </ul>
           </div>
+        </div>
+
+        <div className="w-full h-auto grid grid-cols-1 md:grid-cols-3 gap-[2%]">
+          {cardsInfo.map((item) => {
+            return (
+              <div
+                key={item.title}
+                className="min-h-[50vh] flex flex-col justify-start gap-y-[2vh] px-[10%] py-[10%] border border-primary border-l-4 border-collapse "
+              >
+                <div className="w-[16%] aspect-square">
+                  <CheckIcon />
+                </div>
+                <h5 className=" text-[3rem] font-semibold text-primary">
+                  {" "}
+                  {language === "spanish" ? item.titulo : item.title}
+                </h5>{" "}
+                <p className="text-[1.8rem]">
+                  {language === "spanish" ? item.texto : item.text}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

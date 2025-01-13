@@ -8,8 +8,8 @@ import { cookies } from 'next/headers'
 
 const title = "Our Products";
 const titulo = "Nuestros Productos";
-const introduction="Tools designed to enhance operator safety in work environments involving the handling of heavy equipment or those that may pose risks to hands and the body."
-const introduccion="Herramientas diseñadas para mejorar la seguridad de los operadores en entornos de trabajo que implican manipulación de equipos pesados  o que pueden ser peligrosos para las manos y el cuerpo."
+const introduction="Tools designed to improve people's safety in work environments that involve handling heavy equipment or that may be hazardous to the hands and body."
+const introduccion="Herramientas diseñadas para mejorar la seguridad de las personas en entornos de trabajo que implican manipulación de equipos pesados o que pueden ser peligrosos para las manos y el cuerpo."
 
 const productBox = [
   {
@@ -17,8 +17,8 @@ const productBox = [
     titulo: "Catálogo Online",
     image: background1,
     alt: "Background catálogo",
-    text: "Click here to explore our full product catalog and discover all the options available to you.",
-    texto: "Haz clic aquí para explorar nuestro catálogo completo de productos y descubrir todas las opciones disponibles para ti.",
+    text: "Click here to see our complete product catalog.",
+    texto: "Click acá para conocer nuestro catálogo completo de productos.",
     buttonName: "VIEW CATALOG",
     botonNombre:"VER CATÁLOGO",
     path: "/products",
@@ -28,10 +28,10 @@ const productBox = [
     titulo: "Ficha Técnica",
     image: background2,
     alt: "Background ficha técnica",
-    text: "Click here to download the technical sheet of our products and obtain all the detailed information you need.",
-    texto: "Haz clic aquí para descargar la ficha técnica de nuestros productos y obtener toda la información detallada que necesitas.",
-    buttonName: "DOWNLOAD TECHNICAL SHEET",
-    botonNombre:"DESCARGAR FICHA TÉCNICA",
+    text: "Would you like to know more about our products? Download our catalog",
+    texto: "¿Te gustaría conocer más sobre nuestros productos? Descargá nuestro catálogo",
+    buttonName: "DOWNLOAD CATALOG",
+    botonNombre:"DESCARGAR CATÁLOGO",
     path: "/fichas_tecnicas/ficha_productos.pdf",
   },
 ];
