@@ -4,6 +4,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal ";
 import { useContext } from "react";
 import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { MdPhone } from "react-icons/md";
+import Link from "next/link";
 
 const titulo = "Comunicate con nosotros";
 
@@ -34,16 +35,17 @@ export const ContactInfo = () => {
       <ul className="flex flex-col gap-y-[2vh] mt-[2vh] text-[1.5rem]">
         <li className="flex gap-x-[1vw]">
           <MdPhone size={20} className="text-primary" />{" "}
-          <span>+34 345 12548</span>
+          <span>+54 9 3417-459785</span>
         </li>
-        <li className="flex gap-x-[1vw]">
+        <Link   href="https://wa.me/5493417459785"className="flex gap-x-[1vw]">
+       
           <FaWhatsapp size={20} className="text-primary" />{" "}
-          <span>+34 345 12548</span>
-        </li>
-        <li className="flex gap-x-[1vw]">
+          <span>+54 9 3417-459785</span>
+        </Link>
+        <Link   href="mailto:contacto@x3safety.com"className="flex gap-x-[1vw]">
           <FaEnvelope size={20} className="text-primary" />{" "}
-          <span>info@x3safety.com</span>
-        </li>
+          <span>contacto@x3safety.com</span>
+          </Link>
       </ul>
     </div>
   );

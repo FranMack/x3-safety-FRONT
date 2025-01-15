@@ -8,6 +8,9 @@ import { Title } from "./commons";
 const title = "About Us";
 const titulo = "Quienes somos";
 
+const texto =
+  "Somos una empresa especializada en el desarrollo y fabricación de productos diseñados para mejorar y garantizar la seguridad operativa en diversos entornos profesionales. Con el objetivo de  ofrecer las mejores soluciones, fabricamos nuestros productos bajo  los máximos estándares normativos y políticas de calidad.";
+const text="We are a company specialized in the development and manufacturing of products designed to improve and ensure safety operational in various professional environments. With the aim of offer the best solutions, we manufacture our products under the highest regulatory standards and quality policies."
 const cardsInfo = [
   {
     icon: "",
@@ -45,8 +48,7 @@ export const AboutUs = () => {
       className="h-auto w-screen pb-[10vh] bg-gray-100 py-[10vh] "
     >
       <div className="w-[80%] mx-auto">
-
-      <Title title={language === "spanish" ? titulo : title} />
+        <Title title={language === "spanish" ? titulo : title} />
       </div>
       <div className=" w-[80%] min-h-[80vh]  mx-auto  ">
         <div className="w-full min-h-[20vh]  flex flex-col md:flex-row  mb-[5vh] gap-y-[5vh]  ">
@@ -61,12 +63,8 @@ export const AboutUs = () => {
             <div className="hidden md:visible w-[250px] h-full ">
               <MarksIcon />
             </div>
-            <p className="text-[1.8rem] md:text-[2rem]">
-              Somos una empresa especializada en el desarrollo y fabricación de
-              productos diseñados para mejorar y garantizar la seguridad
-              operativa en diversos entornos profesionales. Con el objetivo de
-              ofrecer las mejores soluciones, fabricamos nuestros productos bajo
-              los máximos estándares normativos y políticas de calidad.
+            <p className="text-[1.8rem] md:text-[2rem] font-semibold text-[#454344]">
+            {language === "spanish" ? texto : text}
             </p>
           </div>
         </div>

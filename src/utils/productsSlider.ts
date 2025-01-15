@@ -1,7 +1,8 @@
-import slider4 from "../../public/slider/baston2.webp";
+
 import slider1 from "../../public/slider/baston_p&p.webp";
 import slider2 from "../../public/slider/hit_safe.webp";
 import slider3 from "../../public/slider/truck_lock.webp";
+import slider4 from "../../public/slider/iron_grip.webp"
 
 export const productSliderInfo = [
   {
