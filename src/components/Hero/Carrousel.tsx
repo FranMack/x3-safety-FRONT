@@ -6,9 +6,13 @@ import { useContext, useEffect, useState } from "react";
 import banner3 from "../../../public/hero/carrousel-1.webp";
 import banner2 from "../../../public/hero/carrousel-2.webp";
 import banner1 from "../../../public/hero/carrousel-3.webp";
+import mobileBanner1 from "../../../public/mobile/homeSlider/carrousel-1_vertical.webp";
+import mobileBanner2 from "../../../public/mobile/homeSlider/carrousel-2_vertical.webp";
+import mobileBanner3 from "../../../public/mobile/homeSlider/carrousel-3_vertical.webp";
 const carouselImages = [
   {
     path: banner1,
+    pathMobile: mobileBanner1,
     title: "Ergonomics and safety",
     secondTitle: "Designed to protect what matters most.",
     titulo: "Ergonomía y seguridad",
@@ -16,6 +20,7 @@ const carouselImages = [
   },
   {
     path: banner2,
+    pathMobile: mobileBanner2,
     title: "Tools that care",
     secondTitle: "Design thought to protect what matters most.",
     titulo: "Herramientas que cuidan",
@@ -23,6 +28,7 @@ const carouselImages = [
   },
   {
     path: banner3,
+    pathMobile: mobileBanner3,
     title: "Protect what matters most",
     secondTitle: "Design thought to protect what matters most.",
     titulo: "Protege lo más importante",
@@ -31,8 +37,7 @@ const carouselImages = [
 ];
 
 export const Carrousel = () => {
-  const { language} =
-    useContext(LanguageContext);
+  const { language } = useContext(LanguageContext);
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -53,11 +58,19 @@ export const Carrousel = () => {
           }`}
         >
           {/* Imagen de fondo */}
-          <figure className="absolute inset-0 w-full h-full brightness-800 ">
+          <figure className="absolute hidden md:block inset-0 w-full h-full brightness-800 ">
             <Image
               fill
               className="w-full h-full object-cover"
               src={image.path}
+              alt={image.title}
+            />
+          </figure>
+          <figure className="absolute md:hidden inset-0 w-full h-full brightness-800 ">
+            <Image
+              fill
+              className="w-full h-full object-cover"
+              src={image.pathMobile}
               alt={image.title}
             />
           </figure>

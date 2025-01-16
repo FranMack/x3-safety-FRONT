@@ -8,6 +8,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 interface ProductImage {
   image: StaticImageData;
+  mobileImage:StaticImageData;
   title: string;
   text?: string;
   texto?: string;
@@ -82,7 +83,13 @@ export const ProductSlider = ({ gallery }: Props) => {
               fill
               src={item.image}
               alt={item.title}
-              className="absolute w-full h-full object-cover sm:rounded-[15px]"
+              className="absolute hidden md:block w-full h-full object-cover sm:rounded-[15px]"
+            />
+               <Image
+              fill
+              src={item.mobileImage}
+              alt={item.title}
+              className="absolute md:hidden w-full h-full object-cover sm:rounded-[15px]"
             />
 
             <button
