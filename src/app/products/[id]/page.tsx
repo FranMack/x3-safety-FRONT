@@ -36,7 +36,7 @@ const ProductPage = ({ params }: Props) => {
   const cookieStore = cookies();
   const language = cookieStore.get("language")?.value ?? "spanish";
   return (
-    <main className="relative min-h-screen w-screen  flex flex-col lg:flex-row items-center justify-center  pb-[10vh] ">
+    <main className="relative min-h-screen w-screen  flex flex-col lg:flex-row items-center justify-center  py-[10vh] ">
       <Image
         src={logo}
         alt="logo"

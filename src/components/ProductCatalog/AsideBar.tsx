@@ -11,12 +11,9 @@ const categories = [
   },
   {
     articulo: "Bastón Balizador",
-    item: "Signaling Stick",
+    item: "Safety Guiding Stick ",
   },
-  {
-    articulo: "Martillo Smart",
-    item: "Smart Hammer",
-  },
+
   {
     articulo: "Calzas Ergonómicas",
     item: "Ergonomic Wedges",
@@ -24,6 +21,10 @@ const categories = [
   {
     articulo: "Equipamientos ergonómicos",
     item: "Ergonomic Equipment",
+  },
+  {
+    articulo: "Manipulación de tubos",
+    item: "Pipe handling",
   },
 ];
 
