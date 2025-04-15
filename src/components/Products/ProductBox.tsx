@@ -47,6 +47,7 @@ export const ProductBox = ({
             href={`${path}`}
             className="w-fit mt-[2vh] text-[1.6rem] md:text-[1.4rem] lg:text-[1.6rem] hover-border"
             target={path.includes("ficha") ? "_blank" : ""}
+            rel="noopener noreferrer"
           >
             {language === "spanish" ? botonNombre : buttonName}
           </Link>
