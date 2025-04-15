@@ -32,7 +32,7 @@ const productBox = [
     texto: "¿Te gustaría conocer más sobre nuestros productos? Descargá nuestro catálogo",
     buttonName: "DOWNLOAD CATALOG",
     botonNombre:"DESCARGAR CATÁLOGO",
-    path: "/fichas_tecnicas/ficha_productos.pdf",
+    path: "/ficha_tecnicas/ficha_productos.pdf",
   },
 ];
 
