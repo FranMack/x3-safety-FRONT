@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "X3 Safety - Herramientas de Seguridad y Protección Laboral",
     description:
       "Descubre las herramientas de X3 Safety, diseñadas para garantizar la seguridad de los operarios en trabajos industriales y peligrosos. Protección, ergonomía y prevención en un solo lugar.",
-    images: "https://x3safety.com/imagen-producto.jpg", // Cambia esta URL por una imagen representativa de tu producto o marca.
+    images: "https://x3safety.vercel.app/favicon.png", // Cambia esta URL por una imagen representativa de tu producto o marca.
     url: "https://x3safety.com",
     type: "website",
     locale: "es_ES",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "X3 Safety - Herramientas de Seguridad y Protección Laboral",
     description:
       "Protege a tus operarios con las herramientas ergonómicas y seguras de X3 Safety. Diseñadas para prevenir accidentes en trabajos industriales y peligrosos.",
-    images: "https://x3safety.com/imagen-producto.jpg", // Cambia esta URL por una imagen representativa de tu producto o marca.
+    images: "https://x3safety.vercel.app/favicon.png", // Cambia esta URL por una imagen representativa de tu producto o marca.
   },
 
   viewport: "width=device-width, initial-scale=1.0", // Optimización para dispositivos móviles.
@@ -55,6 +55,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.png" />
+          <link rel="canonical" href="https://x3safety.vercel.app/" />
       </head>
       <body className={barlow.className}>
         <FilterProductsContextProvider>
