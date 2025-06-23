@@ -3,12 +3,14 @@ import { LanguageContext } from "@/context/language.context";
 import Image from "next/image";
 import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
-import banner3 from "../../../public/hero/carrousel-1.webp";
-import banner2 from "../../../public/hero/carrousel-2.webp";
-import banner1 from "../../../public/hero/carrousel-3.webp";
-import mobileBanner1 from "../../../public/mobile/homeSlider/carrousel-1_vertical.webp";
-import mobileBanner2 from "../../../public/mobile/homeSlider/carrousel-2_vertical.webp";
-import mobileBanner3 from "../../../public/mobile/homeSlider/carrousel-3_vertical.webp";
+import banner3 from "../../../public/hero/banner1.webp";
+import banner2 from "../../../public/hero/banner2.webp";
+import banner1 from "../../../public/hero/banner3.webp";
+import mobileBanner1 from "../../../public/mobile/homeSlider/banner1_mobiile.webp";
+import mobileBanner2 from "../../../public/mobile/homeSlider/banner2_mobiile.webp";
+import mobileBanner3 from "../../../public/mobile/homeSlider/banner3_mobiile.webp";
+
+
 const carouselImages = [
   {
     path: banner1,
