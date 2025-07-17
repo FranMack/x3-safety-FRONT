@@ -1,7 +1,7 @@
+import hitSafe4 from "../../public/products-image/hit safe/HIT SAFE - LUMION - 8K TRANSPARENTE.webp";
 import hitSafe1 from "../../public/products-image/hit safe/hit_safe_1-Photoroom.webp";
 import hitSafe2 from "../../public/products-image/hit safe/hit_safe_2-Photoroom.webp";
 import hitSafe3 from "../../public/products-image/hit safe/hit_safe_3-Photoroom.webp";
-import hitSafe4 from "../../public/products-image/hit safe/HIT SAFE - LUMION - 8K TRANSPARENTE.webp";
 
 import baston1 from "../../public/products-image/p&p/baston_p&p_1-Photoroom.webp";
 import baston2 from "../../public/products-image/p&p/baston_p&p_2-Photoroom.webp";
@@ -20,8 +20,6 @@ import iromGrip2 from "../../public/products-image/iron_grip/iron_grip2-Photoroo
 import iromGrip3 from "../../public/products-image/iron_grip/iron_grip3-Photoroom.webp";
 import iromGrip4 from "../../public/products-image/iron_grip/iron_grip4-Photoroom.webp";
 
-import bastonStandar1 from "../../public/products-image/baston_standard/baston_standard.webp";
-
 import stilson1 from "../../public/products-image/stilson/stilson_protector_1.webp";
 import stilson2 from "../../public/products-image/stilson/stilson_protector_2.webp";
 import stilson3 from "../../public/products-image/stilson/stilson_protector_3.webp";
@@ -37,34 +35,31 @@ import grinfa2 from "../../public/products-image/grinfa_movil/grinfa_2-Photoroom
 import grinfa3 from "../../public/products-image/grinfa_movil/grinfa_3-Photoroom.webp";
 import grinfa4 from "../../public/products-image/grinfa_movil/grinfa_4-Photoroom.webp";
 
-import espatula1 from "../../public/products-image/Espatula_pesada/espatula_1-Photoroom.webp"
-import espatula2 from "../../public/products-image/Espatula_pesada/espatula_2-Photoroom.webp"
-import espatula3 from "../../public/products-image/Espatula_pesada/espatula_3-Photoroom.webp"
+import espatula1 from "../../public/products-image/Espatula_pesada/espatula_1-Photoroom.webp";
+import espatula2 from "../../public/products-image/Espatula_pesada/espatula_2-Photoroom.webp";
+import espatula3 from "../../public/products-image/Espatula_pesada/espatula_3-Photoroom.webp";
 
-import asada1 from "../../public/products-image/Azada limpia lengueta/asada_1-Photoroom.webp"
-import asada2 from "../../public/products-image/Azada limpia lengueta/asada_2-Photoroom.webp"
-import asada3 from "../../public/products-image/Azada limpia lengueta/asada_3-Photoroom.webp"
-import asada4 from "../../public/products-image/Azada limpia lengueta/asada_4-Photoroom.webp"
+import asada1 from "../../public/products-image/Azada limpia lengueta/asada_1-Photoroom.webp";
+import asada2 from "../../public/products-image/Azada limpia lengueta/asada_2-Photoroom.webp";
+import asada3 from "../../public/products-image/Azada limpia lengueta/asada_3-Photoroom.webp";
+import asada4 from "../../public/products-image/Azada limpia lengueta/asada_4-Photoroom.webp";
 
-import pypPinza1 from "../../public/products-image/pyp_pinza/pyp_pinza_1-Photoroom.webp"
-import pypPinza2 from "../../public/products-image/pyp_pinza/pyp_pinza_2-Photoroom.webp"
-import pypPinza3 from "../../public/products-image/pyp_pinza/pyp_pinza_3-Photoroom.webp"
-import pypPinza4 from "../../public/products-image/pyp_pinza/pyp_pinza_4-Photoroom.webp"
-
-
+import pypPinza1 from "../../public/products-image/pyp_pinza/pyp_pinza_1-Photoroom.webp";
+import pypPinza2 from "../../public/products-image/pyp_pinza/pyp_pinza_2-Photoroom.webp";
+import pypPinza3 from "../../public/products-image/pyp_pinza/pyp_pinza_3-Photoroom.webp";
+import pypPinza4 from "../../public/products-image/pyp_pinza/pyp_pinza_4-Photoroom.webp";
 
 const ficha_baston = "/fichas_tecnicas/BASTON_P&P.pdf";
 const ficha_truckLock = "/fichas_tecnicas/TRUCK_LOCK.pdf";
 const ficha_hitSafe = "/fichas_tecnicas/HIT-SAFE.pdf";
 const ficha_ironGrip = "/fichas_tecnicas/IRON-GRIP.pdf";
 const ficha_irolCan = "/fichas_tecnicas/ROLL-CAN-INTERIOR.pdf";
-const ficha_bastonStandard = "/fichas_tecnicas/BASTON_STANDARD.pdf";
 const ficha_stilson = "/fichas_tecnicas/STILSON_PROTECTOR.pdf";
 const ficha_roll_cam_casing = "/fichas_tecnicas/ROLL-CAM-CASING.pdf";
 const ficha_grinfa_movil = "/fichas_tecnicas/GRINFA-MOVIL.pdf";
-const ficha_espatula="/fichas_tecnicas/ESPATULA-PESADA.pdf"
-const ficha_asada="/fichas_tecnicas/ASADA.pdf"
-const ficha_pyp_pinza="/fichas_tecnicas/P&P-PINZA.pdf"
+const ficha_espatula = "/fichas_tecnicas/ESPATULA-PESADA.pdf";
+const ficha_asada = "/fichas_tecnicas/ASADA.pdf";
+const ficha_pyp_pinza = "/fichas_tecnicas/P&P-PINZA.pdf";
 
 export const productsInfo = [
   {
@@ -188,7 +183,12 @@ export const productsInfo = [
     image: iromGrip1,
     pdf: ficha_ironGrip,
     videoId: "",
-    gallery: [{ path: iromGrip1, title: "Iron Grip" },{ path: iromGrip2, title: "Iron Grip" },{ path: iromGrip3, title: "Iron Grip" },{ path: iromGrip4, title: "Iron Grip" }],
+    gallery: [
+      { path: iromGrip1, title: "Iron Grip" },
+      { path: iromGrip2, title: "Iron Grip" },
+      { path: iromGrip3, title: "Iron Grip" },
+      { path: iromGrip4, title: "Iron Grip" },
+    ],
   },
   {
     id: 5,
@@ -217,36 +217,9 @@ export const productsInfo = [
     videoId: "",
     gallery: [{ path: rollCan1, title: "Roll Can Interior" }],
   },
-  {
-    id: 6,
-    name: "Bastón Standard",
-    category: "Bastón Balizador",
-    descripcion: "Creada para mover cargas, evitando golpes.",
-    description: "Created to move loads, avoiding impacts.",
-    descripcion2:
-      "El Bastón P&P fue creado para la protección de manos que es utilizada para mover carga; evitando aplastamiento, cortes y atrapamiento en manos o personas.",
-    description2:
-      "The P&P Baton was created for hand protection and is used to move loads, avoiding crushing, cuts, and trapping of hands or people.",
-    descripcionItems: [
-      "Tubo de polímero especialmente diseñado para soportar golpes",
-      "Cinta de sujeción tejida con compuestos para soportar golpes y fricciones.",
-      "Manopla ergonómica para tener un mejor agarre y absorber el golpe.",
-      "Cuerda elástica confeccionada con la finalidad de soportar la fricción.",
-    ],
-    descriptionItems: [
-      "Polymer tube specially designed to withstand impacts.",
-      "Strap woven with compounds to withstand impacts and friction.",
-      "Ergonomic grip for better handling and impact absorption.",
-      "Elastic cord designed to withstand friction.",
-    ],
-    image: bastonStandar1,
-    pdf: ficha_bastonStandard,
-    videoId: "",
-    gallery: [{ path: bastonStandar1, title: "Bastón Standard" }],
-  },
 
   {
-    id: 7,
+    id: 6,
     name: "Stilson Safety Guard",
     category: "Equipamientos ergonómicos",
     descripcion: "Protector de mano para Llave Stilson",
@@ -275,11 +248,10 @@ export const productsInfo = [
   },
 
   {
-    id: 8,
+    id: 7,
     name: "Roll Cam para Casing",
     category: "Manipulación de tubos",
-    descripcion:
-      "Manipulación segura y eficiente de caños de casing",
+    descripcion: "Manipulación segura y eficiente de caños de casing",
     description: "Safe and efficient handling of casing pipes",
     descripcion2:
       'Herramienta diseñada para facilitar la movilización segura y eficiente de caños de casing sobre la cama de trabajo. Su construcción robusta permite un desplazamiento suave, reduciendo el esfuerzo manual y mejorando la seguridad operativa. Disponible en medidas estándar de 5", 5½" y 6⅝". Consultar por dimensiones especiales.',
@@ -305,14 +277,14 @@ export const productsInfo = [
   },
 
   {
-    id: 9,
+    id: 8,
     name: "P&P Grinfa Móvil",
     category: "Manipulación de tubos",
     descripcion:
       "Permite manipular y posicionar tubos de gran tamaño de manera segura",
     description: "Allows safe handling and positioning of large pipes",
     descripcion2:
-      'Herramienta especialmente diseñada para facilitar el rodamiento y manipulación de tubos de grandes dimensiones, permitiendo al operario trabajar a una distancia segura y sin la necesidad de aplicar fuerza física directa. Su diseño ergonómico y resistente garantiza una aplicación de fuerza constante y controlada, reduciendo riesgos de accidentes y evitando daños en las piezas. Fabricada con caño de acero, pernos de acero especial y tornillos grado 9, la P&P Grinfa Móvil combina seguridad, durabilidad y eficiencia en cada uso.',
+      "Herramienta especialmente diseñada para facilitar el rodamiento y manipulación de tubos de grandes dimensiones, permitiendo al operario trabajar a una distancia segura y sin la necesidad de aplicar fuerza física directa. Su diseño ergonómico y resistente garantiza una aplicación de fuerza constante y controlada, reduciendo riesgos de accidentes y evitando daños en las piezas. Fabricada con caño de acero, pernos de acero especial y tornillos grado 9, la P&P Grinfa Móvil combina seguridad, durabilidad y eficiencia en cada uso.",
     description2:
       "A tool specially designed to facilitate the rolling and handling of large pipes, allowing the operator to work at a safe distance without the need to apply direct physical force. Its ergonomic and durable design ensures constant and controlled application of force, reducing the risk of accidents and preventing damage to parts. Made with a steel pipe, special steel pins, and grade 9 screws, the Grinfa Mobile P&P combines safety, durability, and efficiency with every use.",
     descripcionItems: [
@@ -335,23 +307,24 @@ export const productsInfo = [
   },
 
   {
-    id: 10,
+    id: 9,
     name: "Espatula pesada",
     category: "Equipamientos ergonómicos",
     descripcion:
       "Ideal para limpieza intensiva en bowls y superficies industriales.",
-    description: "Ideal for intensive cleaning in bowls and industrial surfaces.",
+    description:
+      "Ideal for intensive cleaning in bowls and industrial surfaces.",
     descripcion2:
-      'Diseñada para la limpieza eficiente de bowls y superficies industriales, esta espátula combina resistencia y durabilidad, permitiendo remover residuos sólidos o adheridos sin esfuerzo. Fabricada con hoja de acero 1070B de alta tenacidad y mango reforzado en acero, es ideal para tareas de limpieza intensiva en entornos industriales donde se requiere fuerza y precisión. Su construcción robusta garantiza un uso prolongado y seguro, adaptable a distintos tipos de superficies y necesidades.',
+      "Diseñada para la limpieza eficiente de bowls y superficies industriales, esta espátula combina resistencia y durabilidad, permitiendo remover residuos sólidos o adheridos sin esfuerzo. Fabricada con hoja de acero 1070B de alta tenacidad y mango reforzado en acero, es ideal para tareas de limpieza intensiva en entornos industriales donde se requiere fuerza y precisión. Su construcción robusta garantiza un uso prolongado y seguro, adaptable a distintos tipos de superficies y necesidades.",
     description2:
       "Designed for efficient cleaning of bowls and industrial surfaces, this spatula combines strength and durability, allowing you to effortlessly remove solid or stuck-on residue. Made with a high-tenacity 1070B steel blade and a steel-reinforced handle, it is ideal for intensive cleaning tasks in industrial environments where strength and precision are required. Its robust construction ensures long-lasting, safe use, and is adaptable to different types of surfaces and needs.",
     descripcionItems: [
       "Realiazdo integramente en acero ASTM A500",
-      'Largo 400 mm x 150 mm ancho',
+      "Largo 400 mm x 150 mm ancho",
     ],
     descriptionItems: [
       "Manufactured entirely from ASTM A500 steel",
-      "Length 400 mm x Width 150 mm"
+      "Length 400 mm x Width 150 mm",
     ],
     image: espatula1,
     pdf: ficha_espatula,
@@ -360,27 +333,22 @@ export const productsInfo = [
       { path: espatula1, title: "Espatula pesada" },
       { path: espatula2, title: "Espatula pesada" },
       { path: espatula3, title: "Espatula pesada" },
-
     ],
   },
 
   {
-    id: 11,
+    id: 10,
     name: "Asada limpia lengueta",
     category: "Equipamientos ergonómicos",
     descripcion:
       "Ideal para la limpieza de lenguetas en aplicaciones industriales",
     description: "Ideal for cleaning tabs in industrial applications",
-    descripcion2:'Herramienta especializada para la limpieza de lenguetas en aplicaciones industriales. Su diseño robusto permite una manipulación precisa, eliminando eficazmente residuos o contaminantes de las lenguetas sin dañar las piezas. Ideal para ser utilizada en maquinaria o equipos donde se requieren procesos de limpieza específicos, asegurando un funcionamiento óptimo y sin fallos por acumulación de suciedad.',
+    descripcion2:
+      "Herramienta especializada para la limpieza de lenguetas en aplicaciones industriales. Su diseño robusto permite una manipulación precisa, eliminando eficazmente residuos o contaminantes de las lenguetas sin dañar las piezas. Ideal para ser utilizada en maquinaria o equipos donde se requieren procesos de limpieza específicos, asegurando un funcionamiento óptimo y sin fallos por acumulación de suciedad.",
     description2:
       "Specialized tool for cleaning tabs in industrial applications. Its robust design allows for precise handling, effectively removing residue or contaminants from the tabs without damaging the parts. Ideal for use on machinery or equipment requiring specific cleaning processes, ensuring optimal operation without failure due to dirt buildup.",
-    descripcionItems: [
-      "Realiazdo integramente en acero Acero AISI 1070",
-    ],
-    descriptionItems: [
-      "Made entirely of AISI 1070 steel",
-
-    ],
+    descripcionItems: ["Realiazdo integramente en acero Acero AISI 1070"],
+    descriptionItems: ["Made entirely of AISI 1070 steel"],
     image: asada1,
     pdf: ficha_asada,
     videoId: "",
@@ -392,11 +360,13 @@ export const productsInfo = [
     ],
   },
   {
-    id: 12,
+    id: 11,
     name: "Pinza P&P ",
     category: "Bastón Balizador",
-    descripcion: "Diseñada para la sujeción y liberación segura de componentes en entornos industriales",
-    description: "Designed for the safe holding and release of components in industrial environments",
+    descripcion:
+      "Diseñada para la sujeción y liberación segura de componentes en entornos industriales",
+    description:
+      "Designed for the safe holding and release of components in industrial environments",
     descripcion2:
       "Herramienta manual diseñada para la sujeción y liberación segura de componentes en entornos industriales. Su construcción robusta y diseño ergonómico permiten al operario manipular piezas desde una posición segura, minimizando riesgos y optimizando la eficiencia operativa. Fabricada con mango de aluminio liviano y mordaza de hierro de alta resistencia, es ideal para tareas repetitivas que exigen precisión y durabilidad.",
     description2:
@@ -405,13 +375,13 @@ export const productsInfo = [
       "Tubo de polímero especialmente diseñado para soportar golpes",
       "Pinza de sujección de hierro",
       "Manopla ergonómica para tener un mejor agarre y absorber el golpe.",
-      "Disponible en 3 medidas: 1m, 1,50m y 1,80 m"
+      "Disponible en 3 medidas: 1m, 1,50m y 1,80 m",
     ],
     descriptionItems: [
       "Polymer tube specially designed to withstand impacts",
       "Iron clamping jaw",
       "Ergonomic handle for better grip and shock absorption",
-      "Available in 3 lengths: 1m, 1.5m, and 1.8m"
+      "Available in 3 lengths: 1m, 1.5m, and 1.8m",
     ],
     image: pypPinza1,
     pdf: ficha_pyp_pinza,

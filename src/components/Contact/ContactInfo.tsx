@@ -33,18 +33,18 @@ export const ContactInfo = () => {
         {language === "spanish" ? "Contacto" : "Contact"}
       </h5>
       <ul className="flex flex-col gap-y-[2vh] mt-[2vh] text-[1.5rem]">
-        <li className="flex gap-x-[1vw]">
+        {/*<li className="flex gap-x-[1vw]">
           <MdPhone size={20} className="text-primary" />{" "}
           <span>+54 9 3417-459785</span>
-        </li>
+        </li>*/}
         <Link   href="https://wa.me/5493417459785"className="flex gap-x-[1vw]">
        
           <FaWhatsapp size={20} className="text-primary" />{" "}
           <span>+54 9 3417-459785</span>
         </Link>
-        <Link   href="mailto:contacto@x3safety.com"className="flex gap-x-[1vw]">
+        <Link   href="mailto:sales@x3safety.com"className="flex gap-x-[1vw]">
           <FaEnvelope size={20} className="text-primary" />{" "}
-          <span>contacto@x3safety.com</span>
+          <span>sales@x3safety.com</span>
           </Link>
       </ul>
     </div>
