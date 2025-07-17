@@ -1,10 +1,9 @@
 "use client";
 import { LanguageContext } from "@/context/language.context";
 import { useScrollReveal } from "@/hooks/useScrollReveal ";
+import Link from "next/link";
 import { useContext } from "react";
 import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
-import { MdPhone } from "react-icons/md";
-import Link from "next/link";
 
 const titulo = "Comunicate con nosotros";
 
@@ -37,15 +36,14 @@ export const ContactInfo = () => {
           <MdPhone size={20} className="text-primary" />{" "}
           <span>+54 9 3417-459785</span>
         </li>*/}
-        <Link   href="https://wa.me/5493417459785"className="flex gap-x-[1vw]">
-       
+        <Link href="https://wa.me/5493417459785" className="flex gap-x-[1vw]">
           <FaWhatsapp size={20} className="text-primary" />{" "}
           <span>+54 9 3417-459785</span>
         </Link>
-        <Link   href="mailto:sales@x3safety.com"className="flex gap-x-[1vw]">
+        <Link href="mailto:sales@x3safety.com" className="flex gap-x-[1vw]">
           <FaEnvelope size={20} className="text-primary" />{" "}
           <span>sales@x3safety.com</span>
-          </Link>
+        </Link>
       </ul>
     </div>
   );
