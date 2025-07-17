@@ -1,17 +1,17 @@
-import {
-   AboutUs,
-  Contact,
-  Hero,
-  Products,
-  WhatsUpButton,
-} from "@/components";
+import { AboutUs, Contact, Hero, Products } from "@/components";
+import { AssistantChat } from "@/components/assistant-chat/AssistantChat";
 
 import { IndustryBanner } from "@/components/commons";
+import { AssistantButton } from "@/components/commons/AssistantButton";
+import { AssistantChatContextProvider } from "@/context/assistantChat.contex";
 
 export default function Home() {
   return (
     <main className="bg-gray-100 overflow-x-hidden">
-      <WhatsUpButton />
+      <AssistantChatContextProvider>
+        <AssistantButton />
+        <AssistantChat />
+      </AssistantChatContextProvider>
       <Hero />
       <Products />
       <AboutUs />
