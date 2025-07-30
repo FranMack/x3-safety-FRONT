@@ -130,7 +130,7 @@ export const productsInfo = [
     ],
     image: truckLock1,
     pdf: "https://drive.google.com/file/d/1Kgon_vACSdj6ToX5CSySYA1ziZcYUm0L/view?usp=drive_link",
-    videoId: "InvG2owGUsU",
+    videoId: "",
     gallery: [
       { path: truckLock1, title: "Truck Lock" },
       { path: truckLock2, title: "Truck Lock" },
