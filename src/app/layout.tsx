@@ -1,4 +1,5 @@
 import { Footer, Navbar } from "@/components";
+import { envs } from "@/config/envs";
 import { FilterProductsContextProvider } from "@/context/filterProduct.context";
 import { LanguageContextProvider } from "@/context/language.context";
 import { MenuMobileContextProvider } from "@/context/menuMobile.context";
@@ -19,31 +20,29 @@ export const metadata: Metadata = {
   keywords:
     "herramientas de seguridad, protección laboral, ergonomía, prevención de accidentes, seguridad industrial, protección de operarios, X3 Safety, seguridad en el trabajo",
   robots: "index, follow",
-
-  // Open Graph Meta Tags
   openGraph: {
     title: "X3 Safety - Herramientas de Seguridad y Protección Laboral",
     description:
       "Descubre las herramientas de X3 Safety, diseñadas para garantizar la seguridad de los operarios en trabajos industriales y peligrosos. Protección, ergonomía y prevención en un solo lugar.",
-    images: "https://x3safety.vercel.app/favicon.png", // Cambia esta URL por una imagen representativa de tu producto o marca.
-    url: "https://x3safety.com",
+    images: `${envs.DOMAIN}/favicon.png`,
+    url: `${envs.DOMAIN}`,
     type: "website",
     locale: "es_ES",
   },
-
-  // Twitter Card
   twitter: {
     card: "summary_large_image",
     title: "X3 Safety - Herramientas de Seguridad y Protección Laboral",
     description:
       "Protege a tus operarios con las herramientas ergonómicas y seguras de X3 Safety. Diseñadas para prevenir accidentes en trabajos industriales y peligrosos.",
-    images: "https://x3safety.vercel.app/favicon.png", // Cambia esta URL por una imagen representativa de tu producto o marca.
+    images: `${envs.DOMAIN}/favicon.png`,
   },
+  authors: { name: "X3 Safety", url: `${envs.DOMAIN}` },
+};
 
-  viewport: "width=device-width, initial-scale=1.0", // Optimización para dispositivos móviles.
-
-  // Author information
-  authors: { name: "X3 Safety", url: "https://x3safety.com" },
+// 👇 Agregá esto afuera del export de metadata
+export const viewport = {
+  width: "device-width",
+  initialScale: 1.0,
 };
 
 export default function RootLayout({
@@ -55,7 +54,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.png" />
-          <link rel="canonical" href="https://x3safety.vercel.app/" />
+        <link rel="canonical" href={`${envs.DOMAIN}`} />
       </head>
       <body className={barlow.className}>
         <FilterProductsContextProvider>
