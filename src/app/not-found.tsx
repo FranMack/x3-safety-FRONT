@@ -5,7 +5,7 @@ export default function NotFoundPage() {
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center bg-white px-4 text-center">
       <Image
-        src="/favicon.png"
+        src="/favicon2.png"
         alt="Logo x3 safety"
         width={200}
         height={200}
