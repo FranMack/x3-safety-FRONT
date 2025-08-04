@@ -1,10 +1,12 @@
 import { ButtonContainer } from "@/components/ProductDetails/ButtonContainer";
 import { Modal } from "@/components/ProductDetails/Modal";
 import { Slider } from "@/components/Slider";
+import { envs } from "@/config/envs";
 import { productsInfo } from "@/utils/productsInfo";
 import { Metadata } from "next";
 import { cookies } from "next/headers";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 import { FaCheck } from "react-icons/fa";
 import logo from "../../../../public/favicon.png";
 interface Props {
@@ -15,25 +17,63 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = params;
   const product = productsInfo[id - 1];
 
+  if (!product) {
+    return {
+      title: "Producto no encontrado | X3 Safety",
+      description: "Este producto no existe o ha sido eliminado.",
+    };
+  }
+
+  const imageUrl = `${envs.DOMAIN}/${product.image.src}`;
+
   return {
-    title: product.name,
+    title: `${product.name} | X3 Safety`,
     description: product.description,
     keywords:
       "herramientas de seguridad, protección laboral, ergonomía, prevención de accidentes, seguridad industrial, protección de operarios, X3 Safety, seguridad en el trabajo",
     robots: "index, follow",
-
-    viewport: "width=device-width, initial-scale=1.0", // Optimización para dispositivos móviles.
-
-    // Author information
-    authors: { name: "X3 Safety", url: "https://x3safety.com" },
+    authors: [{ name: "X3 Safety", url: `${envs.DOMAIN}` }],
+    openGraph: {
+      title: `${product.name} | X3 Safety`,
+      description: product.description,
+      images: [
+        {
+          url: imageUrl,
+          width: product.image.width,
+          height: product.image.height,
+          alt: product.name,
+        },
+      ],
+      url: `${envs.DOMAIN}/products/${id}`,
+      type: "website", // ← "product" no está permitido en el tipo de Next.js
+      locale: "es_ES",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${product.name} | X3 Safety`,
+      description: product.description,
+      images: [imageUrl],
+    },
+    category: product.category,
+    alternates: {
+      canonical: `${envs.DOMAIN}/products/${id}`,
+    },
   };
 }
+
+// 👇 Mover viewport a un export separado
+export const viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+};
 
 const ProductPage = ({ params }: Props) => {
   const { id } = params;
 
   const product = productsInfo[id - 1];
+  if (!product) return notFound();
   const cookieStore = cookies();
+
   const language = cookieStore.get("language")?.value ?? "spanish";
   return (
     <main className="relative min-h-screen w-screen  flex flex-col lg:flex-row items-center justify-center  py-[10vh] ">

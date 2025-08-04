@@ -49,44 +49,30 @@ import pypPinza2 from "../../public/products-image/pyp_pinza/pyp_pinza_2-Photoro
 import pypPinza3 from "../../public/products-image/pyp_pinza/pyp_pinza_3-Photoroom.webp";
 import pypPinza4 from "../../public/products-image/pyp_pinza/pyp_pinza_4-Photoroom.webp";
 
-const ficha_baston = "/fichas_tecnicas/BASTON_P&P.pdf";
-const ficha_truckLock = "/fichas_tecnicas/TRUCK_LOCK.pdf";
-const ficha_hitSafe = "/fichas_tecnicas/HIT-SAFE.pdf";
-const ficha_ironGrip = "/fichas_tecnicas/IRON-GRIP.pdf";
-const ficha_irolCan = "/fichas_tecnicas/ROLL-CAN-INTERIOR.pdf";
-const ficha_stilson = "/fichas_tecnicas/STILSON_PROTECTOR.pdf";
-const ficha_roll_cam_casing = "/fichas_tecnicas/ROLL-CAM-CASING.pdf";
-const ficha_grinfa_movil = "/fichas_tecnicas/GRINFA-MOVIL.pdf";
-const ficha_espatula = "/fichas_tecnicas/ESPATULA-PESADA.pdf";
-const ficha_asada = "/fichas_tecnicas/ASADA.pdf";
-const ficha_pyp_pinza = "/fichas_tecnicas/P&P-PINZA.pdf";
-
 export const productsInfo = [
   {
     id: 1,
-    name: "Bastón P&P",
+    name: "P&P",
     category: "Bastón Balizador",
     descripcion: "Creada para mover cargas, evitando golpes.",
     description: "Created to move loads, avoiding impacts.",
     descripcion2:
-      "El Bastón P&P fue creado para la protección de manos que es utilizada para mover carga; evitando aplastamiento, cortes y atrapamiento en manos o personas.",
+      "Herramienta diseñada para acompañar, mover y acomodar cargas elevadas, permitiendo al operario mantener una distancia segura durante la maniobra.",
     description2:
-      "The P&P Baton was created for hand protection and is used to move loads, avoiding crushing, cuts, and trapping of hands or people.",
+      "Tool designed to accompany, move, and accommodate elevated loads, allowing the operator to maintain a safe distance during the maneuver.",
     descripcionItems: [
-      "Tubo de polímero especialmente diseñado para soportar golpes",
-      "Cinta de sujeción tejida con compuestos para soportar golpes y fricciones.",
-      "Manopla ergonómica para tener un mejor agarre y absorber el golpe.",
-      "Cuerda elástica confeccionada con la finalidad de soportar la fricción.",
+      "Punta de polímero resistente, desarrollada especialmente para soportar cargas.",
+      "Cuenta con acabado de pintura electrostática que garantiza mayor durabilidad",
+      "Disponible en diferentes largos: 1.80 m, 1.50 m, 1.20 m y 0.50 m, adaptándose a diversas tareas y necesidades operativas.",
     ],
     descriptionItems: [
-      "Polymer tube specially designed to withstand impacts.",
-      "Strap woven with compounds to withstand impacts and friction.",
-      "Ergonomic grip for better handling and impact absorption.",
-      "Elastic cord designed to withstand friction.",
+      "Durable polymer tip, specially developed to withstand heavy loads.",
+      "Features an electrostatic paint finish that ensures greater durability.",
+      "Available in different lengths: 1.80 m, 1.50 m, 1.20 m, and 0.50 m, adapting to various tasks and operational needs.",
     ],
     image: baston4,
-    pdf: ficha_baston,
-    videoId: "Mgfq70oaW4w",
+    pdf: "https://drive.google.com/file/d/1kn-sDLk6R8PxEBWKJz2_EOljIyV8sRSQ/view?usp=drive_link",
+    videoId: "_WKIu-4wGSE",
     gallery: [
       { path: baston1, title: "Bastón" },
       { path: baston2, title: "Bastón" },
@@ -101,24 +87,22 @@ export const productsInfo = [
     descripcion: "Creada para evitar el impacto en las manos.",
     description: "Created to avoid hand impact.",
     descripcion2:
-      "El bastón Hit Safe fue creado para evitar que los operadores expongan sus manos al riesgo de impacto. Con él, la mano del operador quedará fuera del contacto con el dispositivo que será impactado.",
+      "Bastón diseñado para evitar que los operarios expongan sus manos al riesgo de impacto, manteniéndolas fuera del área de contacto.",
     description2:
-      "The Hit Safe baton was created to prevent operators from exposing their hands to impact risks. With it, the operator's hand will stay out of contact with the device to be impacted.",
+      "Staff designed to prevent operators from exposing their hands to impact risk, keeping them out of the contact area.",
     descripcionItems: [
-      "Tubo de polímero especialmente diseñado para soportar golpes",
-      "Cinta de sujeción tejida con compuestos para soportar golpes y fricciones.",
-      "Manopla ergonómica para tener un mejor agarre y absorber el golpe.",
-      "Cuerda elástica confeccionada con la finalidad de soportar la fricción.",
+      "Fabricado con tubo de polímero resistente a golpes.",
+      "Cuenta con cinta de sujeción reforzada para soportar golpes y fricciones.",
+      "Manopla ergonómica que mejora el agarre, ayudando a absorber los impactos durante su uso.",
     ],
     descriptionItems: [
-      "Polymer tube specially designed to withstand impacts.",
-      "Strap woven with compounds to withstand impacts and friction.",
-      "Ergonomic grip for better handling and impact absorption.",
-      "Elastic cord designed to withstand friction.",
+      "Made with impact-resistant polymer tubing.",
+      "Equipped with reinforced holding strap to withstand impacts and friction.",
+      "Ergonomic handle that improves grip, helping to absorb impacts during use.",
     ],
     image: hitSafe1,
-    pdf: ficha_hitSafe,
-    videoId: "1ZHVrYpzhLg",
+    pdf: "https://drive.google.com/file/d/1znXkLRGcmYVDRVhzKLDAh3mFQOcihxj8/view?usp=drive_link",
+    videoId: "bq3aPnh4n7U",
     gallery: [
       { path: hitSafe1, title: "Hit Safe" },
       { path: hitSafe2, title: "Hit Safe" },
@@ -133,24 +117,20 @@ export const productsInfo = [
     descripcion: "Diseñada para inmovilizar vehículos",
     description: "Designed to immobilize vehicles.",
     descripcion2:
-      "El uso de la calza ergonómica es una excelente herramienta para inmovilizar y priorizar la seguridad de los profesionales que realizan su posicionamiento en los vehículos.",
+      "Calza ergonómica diseñada para inmovilizar vehículos y garantizar la seguridad de los profesionales durante sus tareas.",
     description2:
-      "The ergonomic wedge is an excellent tool to immobilize vehicles and prioritize the safety of professionals positioning them.",
+      "Ergonomic wheel chock designed to immobilize vehicles and ensure the safety of professionals during their tasks.",
     descripcionItems: [
-      "Tubo de polímero especialmente diseñado para soportar golpes",
-      "Cinta de sujeción tejida con compuestos para soportar golpes y fricciones.",
-      "Manopla ergonómica para tener un mejor agarre y absorber el golpe.",
-      "Cuerda elástica confeccionada con la finalidad de soportar la fricción.",
+      "Fabricada con estructura de acero y tacos de polímero de alta resistencia, que cumplen con la norma DIN 76051-53.",
+      "Modelo único de 1.2 x 0.8 x 1 m, fácil de posicionar y manipular gracias a su diseño con ruedas y manijas ergonómicas.",
     ],
     descriptionItems: [
-      "Polymer tube specially designed to withstand impacts.",
-      "Strap woven with compounds to withstand impacts and friction.",
-      "Ergonomic grip for better handling and impact absorption.",
-      "Elastic cord designed to withstand friction.",
+      "Built with a steel structure and high-resistance polymer blocks, compliant with DIN 76051-53 standard.",
+      "Unique model measuring 1.2 x 0.8 x 1 m, easy to position and handle thanks to its design with wheels and ergonomic handles.",
     ],
     image: truckLock1,
-    pdf: ficha_truckLock,
-    videoId: "InvG2owGUsU",
+    pdf: "https://drive.google.com/file/d/1Kgon_vACSdj6ToX5CSySYA1ziZcYUm0L/view?usp=drive_link",
+    videoId: "",
     gallery: [
       { path: truckLock1, title: "Truck Lock" },
       { path: truckLock2, title: "Truck Lock" },
@@ -165,23 +145,23 @@ export const productsInfo = [
     descripcion: "Diseñada para la manipulación de tubos.",
     description: "Designed for tube handling.",
     descripcion2:
-      "La pinza Iron grip es una herramienta de protección de manos que fue diseñada para manipular tubos.",
+      "Pinza diseñada para manipular tubos sin necesidad de contacto manual directo, aumentando la seguridad del operario.",
     description2:
-      "The Iron Grip clamp is a hand protection tool designed to handle tubes.",
+      "Clamp designed to handle tubes without the need for direct manual contact, increasing operator safety.",
     descripcionItems: [
-      "Tubo de polímero especialmente diseñado para soportar golpes",
-      "Cinta de sujeción tejida con compuestos para soportar golpes y fricciones.",
-      "Manopla ergonómica para tener un mejor agarre y absorber el golpe.",
-      "Cuerda elástica confeccionada con la finalidad de soportar la fricción.",
+      "Fabricada en acero.",
+      "Cuenta con sistema de cierre automático al entrar en contacto con el tubo para una sujeción firme y segura.",
+      "Cuenta con acabado en pintura poliuretánica acrílica que brinda mayor resistencia.",
+      `Disponible en versiones para tubos de 2", 2 3/8" y 3".`,
     ],
     descriptionItems: [
-      "Polymer tube specially designed to withstand impacts.",
-      "Strap woven with compounds to withstand impacts and friction.",
-      "Ergonomic grip for better handling and impact absorption.",
-      "Elastic cord designed to withstand friction.",
+      "Made of steel.",
+      "Features an automatic locking system that activates upon contact with the pipe for a firm and secure hold.",
+      "Finished with acrylic polyurethane paint for increased resistance.",
+      `Available in versions for 2", 2 3/8", and 3" pipes.`,
     ],
     image: iromGrip1,
-    pdf: ficha_ironGrip,
+    pdf: "https://drive.google.com/file/d/1_Yukc66F932OGxS7q2eoU7wwGSv1JSKe/view?usp=drive_link",
     videoId: "",
     gallery: [
       { path: iromGrip1, title: "Iron Grip" },
@@ -192,30 +172,28 @@ export const productsInfo = [
   },
   {
     id: 5,
-    name: "Roll Can Interior",
+    name: "Roll Cam Interior",
     category: "Manipulación de tubos",
     descripcion: "Diseñada para girar y trasladar tubos casing",
     description: "Designed to rotate and transport casing tubes.",
     descripcion2:
-      "Es una herramienta diseñada con agarre interno para trasladar los tubos casing en la cama, haciéndolos girar para evitar el aplastamiento en las manos de los operarios.",
+      "Herramienta diseñada con agarre interno para trasladar tubos casing sobre la cama, permitiendo su giro y evitando el aplastamiento de manos durante la maniobra.",
     description2:
-      "It is a tool designed with an internal grip to transport casing tubes on the bed, rotating them to prevent crushing the operators' hands.",
+      "Tool designed with an internal grip to move casing pipes on the bed, allowing them to rotate and preventing hands from being crushed during the maneuver.",
     descripcionItems: [
-      "Tubo de polímero especialmente diseñado para soportar golpes",
-      "Cinta de sujeción tejida con compuestos para soportar golpes y fricciones.",
-      "Manopla ergonómica para tener un mejor agarre y absorber el golpe.",
-      "Cuerda elástica confeccionada con la finalidad de soportar la fricción.",
+      "Herramienta con agarre interior, ideal para mover caños sobre cama, permitiendo el giro controlado y evitando el aplastamiento de manos.",
+      "Fabricada con materiales de alta resistencia: acero, Grilon P6 y rodamientos para un movimiento fluido y duradero.",
+      "Disponible en dos modelos, según el diámetro del caño: de 2 a 4 pulgadas y 2 7/8 pulgadas.",
     ],
     descriptionItems: [
-      "Polymer tube specially designed to withstand impacts.",
-      "Strap woven with compounds to withstand impacts and friction.",
-      "Ergonomic grip for better handling and impact absorption.",
-      "Elastic cord designed to withstand friction.",
+      "Tool with internal grip, ideal for moving pipes over the bed, allowing controlled rotation and preventing hand crushing.",
+      "Made with high-resistance materials: steel, Grilon P6, and bearings for smooth and durable movement.",
+      "Available in two models, depending on pipe diameter: 2 to 4 inches and 2 7/8 inches.",
     ],
     image: rollCan1,
-    pdf: ficha_irolCan,
+    pdf: "https://drive.google.com/file/d/1HlcDozd8JyhPpDmCJZcLQir1pU1qQn53/view?usp=drive_link",
     videoId: "",
-    gallery: [{ path: rollCan1, title: "Roll Can Interior" }],
+    gallery: [{ path: rollCan1, title: "Roll Cam Interior" }],
   },
 
   {
@@ -225,20 +203,22 @@ export const productsInfo = [
     descripcion: "Protector de mano para Llave Stilson",
     description: "Hand guard for Stilson Wrench",
     descripcion2:
-      "La herramienta ha sido diseñada específicamente para brindar protección a la mano del operario durante el uso de la llave Stilson. Su función principal es actuar como una barrera de seguridad, evitando que la mano entre en contacto directo con la superficie de trabajo o que sufra golpes accidentales producto de deslizamientos o movimientos bruscos de la llave.",
+      "Accesorio de seguridad diseñado para proteger las manos del operario durante el uso de llaves Stilson, minimizando el riesgo de golpes en tareas de torque o maniobra.",
     description2:
-      "The tool has been specifically designed to protect the operator's hand while using the Stilson wrench. Its primary function is to act as a safety barrier, preventing the hand from coming into direct contact with the work surface or from being accidentally hit by slipping or sudden movements of the wrench.",
+      "Safety accessory designed to protect the operator's hands while using Stilson wrenches, minimizing the risk of impacts during torque or maneuvering tasks.",
     descripcionItems: [
-      "Realiazdo en polimero de alto impacto y aluminio",
-      '4 modelos dispinibles, para llave de 18",24",32" y 36"',
+      `Compatible con llaves Stilson de 18”, 24”, 32” y 36”.`,
+      "Fabricado en aluminio y polímero de alto impacto, resistentes al uso intensivo.",
+      "Fácil de instalar: se encastra y ajusta con bulones para asegurar una fijación firme y segura.",
     ],
     descriptionItems: [
-      "Made of high-impact polymer and aluminum",
-      'Available in 4 models, for 18", 24", 32" and 36" wrenches',
+      "Compatible with 18”, 24”, 32”, and 36” Stilson wrenches.",
+      "Made of aluminum and high-impact polymer, resistant to intensive use.",
+      "Easy to install: fits and secures with bolts for a firm and safe attachment.",
     ],
     image: stilson1,
-    pdf: ficha_stilson,
-    videoId: "",
+    pdf: "https://drive.google.com/file/d/1AkO2KdaAQWGQ7oIwrisBZFdIt7ElXiuJ/view?usp=drive_link",
+    videoId: "PPazATP11-4",
     gallery: [
       { path: stilson1, title: "Stilson Protector" },
       { path: stilson2, title: "Stilson Protector" },
@@ -254,19 +234,21 @@ export const productsInfo = [
     descripcion: "Manipulación segura y eficiente de caños de casing",
     description: "Safe and efficient handling of casing pipes",
     descripcion2:
-      'Herramienta diseñada para facilitar la movilización segura y eficiente de caños de casing sobre la cama de trabajo. Su construcción robusta permite un desplazamiento suave, reduciendo el esfuerzo manual y mejorando la seguridad operativa. Disponible en medidas estándar de 5", 5½" y 6⅝". Consultar por dimensiones especiales.',
+      "Herramienta ergonómica diseñada para movilizar caños tipo casing en estiva de manera segura, evitando el contacto directo con las manos del operario y reduciendo el riesgo de lesiones.",
     description2:
-      "The tool has been specifically designed to protect the operator's hand while using the Stilson wrench. Its primary function is to act as a safety barrier, preventing the hand from coming into direct contact with the work surface or from being accidentally hit by slipping or sudden movements of the wrench.",
+      "Ergonomic tool designed to safely move casing pipes in storage, avoiding direct contact with the operator's hands and reducing the risk of injury.",
     descripcionItems: [
-      "Realiazdo en polimero de alto impacto y aluminio",
-      '4 modelos dispinibles, para tubos de diámetros: 5",5½",32" y 6⅝"',
+      "Fabricada en aluminio 60-63, ideal para resistir esfuerzos sin comprometer el peso.",
+      'Disponible en distintos modelos según el diámetro del casing: 5", 5 ½", 6 5/8", y 9 5/8',
+      "Incluye protector circular ajustable para mayor protección de manos y mejor control durante la maniobra.",
     ],
     descriptionItems: [
-      "Made of high-impact polymer and aluminum",
-      '"4 models available for pipe diameters: 5",5½",32" y 6⅝"',
+      "Made of 60-63 aluminum, ideal for withstanding stress without compromising weight.",
+      'Available in different models according to casing diameter: 5", 5 ½", 6 5/8", and 9 5/8".',
+      "Includes an adjustable circular guard for better hand protection and improved control during handling.",
     ],
     image: roll_can_casing1,
-    pdf: ficha_roll_cam_casing,
+    pdf: "https://drive.google.com/file/d/1K4W3svquv_mjqca28xTWY4MPM8h8_Ulc/view?usp=drive_link",
     videoId: "",
     gallery: [
       { path: roll_can_casing1, title: "Stilson Protector" },
@@ -280,23 +262,24 @@ export const productsInfo = [
     id: 8,
     name: "P&P Grinfa Móvil",
     category: "Manipulación de tubos",
-    descripcion:
-      "Permite manipular y posicionar tubos de gran tamaño de manera segura",
-    description: "Allows safe handling and positioning of large pipes",
+    descripcion: "Permite manipular y posicionar tubos casing",
+    description: "Allows safe handling and positioning of casing pipes",
     descripcion2:
-      "Herramienta especialmente diseñada para facilitar el rodamiento y manipulación de tubos de grandes dimensiones, permitiendo al operario trabajar a una distancia segura y sin la necesidad de aplicar fuerza física directa. Su diseño ergonómico y resistente garantiza una aplicación de fuerza constante y controlada, reduciendo riesgos de accidentes y evitando daños en las piezas. Fabricada con caño de acero, pernos de acero especial y tornillos grado 9, la P&P Grinfa Móvil combina seguridad, durabilidad y eficiencia en cada uso.",
+      "Herramienta diseñada para facilitar el rodamiento seguro de caños de gran tamaño, permitiendo al operario operar a distancia, sin esfuerzo físico y minimizando riesgos de manipulación.",
     description2:
-      "A tool specially designed to facilitate the rolling and handling of large pipes, allowing the operator to work at a safe distance without the need to apply direct physical force. Its ergonomic and durable design ensures constant and controlled application of force, reducing the risk of accidents and preventing damage to parts. Made with a steel pipe, special steel pins, and grade 9 screws, the Grinfa Mobile P&P combines safety, durability, and efficiency with every use.",
+      "A tool designed to facilitate the safe rolling of large pipes, allowing the operator to operate remotely, without physical effort, and minimizing handling risks.",
     descripcionItems: [
-      "Made entirely of ASTM A500 steel",
-      "Length 1250 mm x 110 mm width",
+      "Permite controlar el movimiento de tubos grandes con una fuerza constante y uniforme, evitando daños en las piezas y en el operario.",
+      "Fabricada con caño de acero, pernos especiales y tornillos grado 9, lo que garantiza robustez y durabilidad.",
+      "Diseño ergonómico con protectores de seguridad que aseguran una sujeción firme y segura durante el uso",
     ],
     descriptionItems: [
-      "Made of high-impact polymer and aluminum",
-      'Available in 4 models, for 18", 24", 32" and 36" wrenches',
+      "Allows control of large pipe movement with constant and even force, preventing damage to parts and to the operator.",
+      "Made with steel pipe, special bolts, and grade 9 screws, ensuring strength and durability.",
+      "Ergonomic design with safety guards that ensure a firm and secure grip during use.",
     ],
     image: grinfa1,
-    pdf: ficha_grinfa_movil,
+    pdf: "https://drive.google.com/file/d/1iQYri9QDlN7XGEfr7-o8HMW_qcMv0Vai/view?usp=drive_link",
     videoId: "",
     gallery: [
       { path: grinfa1, title: "Grinfa movil" },
@@ -315,19 +298,21 @@ export const productsInfo = [
     description:
       "Ideal for intensive cleaning in bowls and industrial surfaces.",
     descripcion2:
-      "Diseñada para la limpieza eficiente de bowls y superficies industriales, esta espátula combina resistencia y durabilidad, permitiendo remover residuos sólidos o adheridos sin esfuerzo. Fabricada con hoja de acero 1070B de alta tenacidad y mango reforzado en acero, es ideal para tareas de limpieza intensiva en entornos industriales donde se requiere fuerza y precisión. Su construcción robusta garantiza un uso prolongado y seguro, adaptable a distintos tipos de superficies y necesidades.",
+      "Herramienta robusta diseñada para la limpieza de bowls industriales, ideal también para tareas de remoción intensiva en entornos exigentes.",
     description2:
-      "Designed for efficient cleaning of bowls and industrial surfaces, this spatula combines strength and durability, allowing you to effortlessly remove solid or stuck-on residue. Made with a high-tenacity 1070B steel blade and a steel-reinforced handle, it is ideal for intensive cleaning tasks in industrial environments where strength and precision are required. Its robust construction ensures long-lasting, safe use, and is adaptable to different types of surfaces and needs.",
+      "Robust tool designed for cleaning industrial bowls, also ideal for intensive removal tasks in demanding environments.",
     descripcionItems: [
-      "Realiazdo integramente en acero ASTM A500",
-      "Largo 400 mm x 150 mm ancho",
+      "Diseño ergonómico que permite operar con mayor control desde la manopla, reduciendo el esfuerzo del usuario.",
+      "Mango de acero y hoja de espátula en acero 1070b, lo que brinda resistencia y durabilidad.",
+      "Medidas: 150 mm x 400 mm, adaptables según necesidad del cliente.",
     ],
     descriptionItems: [
-      "Manufactured entirely from ASTM A500 steel",
-      "Length 400 mm x Width 150 mm",
+      "Ergonomic design that allows greater control from the handle, reducing user effort.",
+      "Steel handle and 1070b steel spatula blade, providing strength and durability.",
+      "Dimensions: 150 mm x 400 mm, customizable according to client needs.",
     ],
     image: espatula1,
-    pdf: ficha_espatula,
+    pdf: "https://drive.google.com/file/d/139W-jShtbT_3qvaWBQmFdEpoJQe7qRIv/view?usp=drive_link",
     videoId: "",
     gallery: [
       { path: espatula1, title: "Espatula pesada" },
@@ -338,19 +323,27 @@ export const productsInfo = [
 
   {
     id: 10,
-    name: "Asada limpia lengueta",
+    name: "Azada limpia lengüetas",
     category: "Equipamientos ergonómicos",
     descripcion:
       "Ideal para la limpieza de lenguetas en aplicaciones industriales",
     description: "Ideal for cleaning tabs in industrial applications",
     descripcion2:
-      "Herramienta especializada para la limpieza de lenguetas en aplicaciones industriales. Su diseño robusto permite una manipulación precisa, eliminando eficazmente residuos o contaminantes de las lenguetas sin dañar las piezas. Ideal para ser utilizada en maquinaria o equipos donde se requieren procesos de limpieza específicos, asegurando un funcionamiento óptimo y sin fallos por acumulación de suciedad.",
+      "Herramienta diseñada para reorganizar el cutting y acomodar sólidos en secadoras, facilitando tareas de limpieza industrial de forma segura y eficiente.",
     description2:
-      "Specialized tool for cleaning tabs in industrial applications. Its robust design allows for precise handling, effectively removing residue or contaminants from the tabs without damaging the parts. Ideal for use on machinery or equipment requiring specific cleaning processes, ensuring optimal operation without failure due to dirt buildup.",
-    descripcionItems: ["Realiazdo integramente en acero Acero AISI 1070"],
-    descriptionItems: ["Made entirely of AISI 1070 steel"],
+      "Tool designed to reorganize cutting and accommodate solids in dryers, facilitating industrial cleaning tasks safely and efficiently.",
+    descripcionItems: [
+      "Fabricada en acero 1070b, brinda resistencia y durabilidad en entornos exigentes",
+      "Se utiliza para reorganizar y mover sólidos acumulados en contenedores o secadoras",
+      "Diseño ergonómico para ser operada desde la manopla, ofreciendo mejor control sin comprometer la seguridad del operario.",
+    ],
+    descriptionItems: [
+      "Made of 1070b steel, providing strength and durability in demanding environments.",
+      "Used to reorganize and move accumulated solids in containers or dryers.",
+      "Ergonomic design to be operated from the handle, offering better control without compromising operator safety.",
+    ],
     image: asada1,
-    pdf: ficha_asada,
+    pdf: "https://drive.google.com/file/d/1Mblvyol-NaKDqLw7EiryRZxkFLPU5bs4/view?usp=drive_link",
     videoId: "",
     gallery: [
       { path: asada1, title: "Asada limpia lengueta" },
@@ -368,24 +361,22 @@ export const productsInfo = [
     description:
       "Designed for the safe holding and release of components in industrial environments",
     descripcion2:
-      "Herramienta manual diseñada para la sujeción y liberación segura de componentes en entornos industriales. Su construcción robusta y diseño ergonómico permiten al operario manipular piezas desde una posición segura, minimizando riesgos y optimizando la eficiencia operativa. Fabricada con mango de aluminio liviano y mordaza de hierro de alta resistencia, es ideal para tareas repetitivas que exigen precisión y durabilidad.",
+      "Herramienta diseñada para ejecutar tareas de enganche y desenganche de forma segura y eficiente, permitiendo al operario trabajar a distancia, minimizando riesgos y aumentando la productividad.",
     description2:
-      "Hand tool designed for the safe holding and releasing of components in industrial environments. Its robust construction and ergonomic design allow the operator to handle parts from a safe position, minimizing risks and optimizing operational efficiency. Made with a lightweight aluminum handle and heavy-duty iron jaws, it is ideal for repetitive tasks that demand precision and durability.",
+      "A tool designed to perform hooking and unhooking tasks safely and efficiently, allowing the operator to work remotely, minimizing risks and increasing productivity.",
     descripcionItems: [
-      "Tubo de polímero especialmente diseñado para soportar golpes",
-      "Pinza de sujección de hierro",
-      "Manopla ergonómica para tener un mejor agarre y absorber el golpe.",
-      "Disponible en 3 medidas: 1m, 1,50m y 1,80 m",
+      "Disponible en versiones de 100, 150 y 180 cm de largo, adaptándose a distintas necesidades operativas.",
+      "Fabricada con mango de aluminio y pinza de hierro, materiales resistentes al uso intensivo en entornos industriales.",
+      "Sistema de manillar ergonómico que permite accionar la pinza con precisión.",
     ],
     descriptionItems: [
-      "Polymer tube specially designed to withstand impacts",
-      "Iron clamping jaw",
-      "Ergonomic handle for better grip and shock absorption",
-      "Available in 3 lengths: 1m, 1.5m, and 1.8m",
+      "Available in 100, 150, and 180 cm versions, adapting to different operational needs.",
+      "Made with an aluminum handle and iron clamp, using materials resistant to intensive use in industrial environments.",
+      "Ergonomic handlebar system that allows the clamp to be operated with precision.",
     ],
     image: pypPinza1,
-    pdf: ficha_pyp_pinza,
-    videoId: "",
+    pdf: "https://drive.google.com/file/d/1yIfHwCWBmlc5ZvWiUcHd4csxVXwVV86f/view?usp=drive_link",
+    videoId: "jkMmOPziS6Y",
     gallery: [
       { path: pypPinza1, title: "P&P Pinza" },
       { path: pypPinza2, title: "P&P Pinza" },

@@ -46,7 +46,7 @@ export const ProductBox = ({
           <Link
             href={`${path}`}
             className="w-fit mt-[2vh] text-[1.6rem] md:text-[1.4rem] lg:text-[1.6rem] hover-border"
-            target={path.includes("ficha") ? "_blank" : ""}
+            target={path.includes("drive.google") ? "_blank" : ""}
             prefetch={false}
             rel="noopener noreferrer"
           >
