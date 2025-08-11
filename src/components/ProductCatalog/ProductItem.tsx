@@ -7,7 +7,7 @@ import { HashLoader } from "react-spinners";
 import { ProductItemProps } from "./ProductsGrid";
 
 export const ProductItem = ({
-  id,
+  slug,
   name,
   description,
   descripcion,
@@ -18,7 +18,7 @@ export const ProductItem = ({
   const [isLoading, setIsLoading] = useState(true);
 
   const handleNavigate = () => {
-    router.push(`/products/${id}`);
+    router.push(`/products/${slug}`);
   };
 
   return (

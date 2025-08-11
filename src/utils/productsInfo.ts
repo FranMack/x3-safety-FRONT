@@ -53,6 +53,7 @@ export const productsInfo = [
   {
     id: 1,
     name: "P&P",
+    slug: "pyp",
     category: "Bastón Balizador",
     descripcion: "Creada para mover cargas, evitando golpes.",
     description: "Created to move loads, avoiding impacts.",
@@ -83,6 +84,7 @@ export const productsInfo = [
   {
     id: 2,
     name: "Hit Safe",
+    slug: "hit_safe",
     category: "Equipamientos ergonómicos",
     descripcion: "Creada para evitar el impacto en las manos.",
     description: "Created to avoid hand impact.",
@@ -113,6 +115,7 @@ export const productsInfo = [
   {
     id: 3,
     name: "Truck Lock",
+    slug: "truck_lock",
     category: "Calzas Ergonómicas",
     descripcion: "Diseñada para inmovilizar vehículos",
     description: "Designed to immobilize vehicles.",
@@ -141,6 +144,7 @@ export const productsInfo = [
   {
     id: 4,
     name: "Iron Grip",
+    slug: "iron_grip",
     category: "Manipulación de tubos",
     descripcion: "Diseñada para la manipulación de tubos.",
     description: "Designed for tube handling.",
@@ -173,6 +177,7 @@ export const productsInfo = [
   {
     id: 5,
     name: "Roll Cam Interior",
+    slug: "roll_cam_interior",
     category: "Manipulación de tubos",
     descripcion: "Diseñada para girar y trasladar tubos casing",
     description: "Designed to rotate and transport casing tubes.",
@@ -199,6 +204,7 @@ export const productsInfo = [
   {
     id: 6,
     name: "Stilson Safety Guard",
+    slug: "stilson_safety_guard",
     category: "Equipamientos ergonómicos",
     descripcion: "Protector de mano para Llave Stilson",
     description: "Hand guard for Stilson Wrench",
@@ -230,6 +236,7 @@ export const productsInfo = [
   {
     id: 7,
     name: "Roll Cam para Casing",
+    slug: "roll_cam_para_casing",
     category: "Manipulación de tubos",
     descripcion: "Manipulación segura y eficiente de caños de casing",
     description: "Safe and efficient handling of casing pipes",
@@ -261,6 +268,7 @@ export const productsInfo = [
   {
     id: 8,
     name: "P&P Grinfa Móvil",
+    slug: "pyp_grinfa_movil",
     category: "Manipulación de tubos",
     descripcion: "Permite manipular y posicionar tubos casing",
     description: "Allows safe handling and positioning of casing pipes",
@@ -292,6 +300,7 @@ export const productsInfo = [
   {
     id: 9,
     name: "Espatula pesada",
+    slug: "espatula_pesada",
     category: "Equipamientos ergonómicos",
     descripcion:
       "Ideal para limpieza intensiva en bowls y superficies industriales.",
@@ -324,6 +333,7 @@ export const productsInfo = [
   {
     id: 10,
     name: "Azada limpia lengüetas",
+    slug: "azada_limpia_lenguetas",
     category: "Equipamientos ergonómicos",
     descripcion:
       "Ideal para la limpieza de lenguetas en aplicaciones industriales",
@@ -355,6 +365,7 @@ export const productsInfo = [
   {
     id: 11,
     name: "Pinza P&P ",
+    slug: "pinza_pyp",
     category: "Bastón Balizador",
     descripcion:
       "Diseñada para la sujeción y liberación segura de componentes en entornos industriales",

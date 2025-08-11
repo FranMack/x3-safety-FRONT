@@ -7,6 +7,7 @@ import { useContext, useEffect, useState } from "react";
 
 export interface ProductItemProps {
   id: string | number;
+  slug:string;
   image: StaticImageData;
   name: string;
   description: string;

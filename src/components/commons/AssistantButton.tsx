@@ -10,7 +10,7 @@ export const AssistantButton = () => {
     <div
       title="Asistente virtual"
       onClick={toggleAssistantChat}
-      className={`xs:h-[50px] lg:h-[70px] aspect-square rounded-full bg-primary fixed  xs:bottom-20 lg:bottom-32 xs:right-5 right-10 flex justify-center items-center z-50  hover hover:scale-110 transition-transform duration-1000 ${
+      className={`xs:h-[55px] lg:h-[70px] aspect-square rounded-full bg-primary fixed  xs:bottom-20 lg:bottom-32 xs:right-5 right-10 flex justify-center items-center z-50  hover hover:scale-110 transition-transform duration-1000 ${
         assistantChat ? "invisible" : ""
       }`}
     >

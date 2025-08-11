@@ -1,5 +1,8 @@
 import { Footer, Navbar } from "@/components";
+import { AssistantChat } from "@/components/assistant-chat/AssistantChat";
+import { AssistantButton } from "@/components/commons/AssistantButton";
 import { envs } from "@/config/envs";
+import { AssistantChatContextProvider } from "@/context/assistantChat.contex";
 import { FilterProductsContextProvider } from "@/context/filterProduct.context";
 import { LanguageContextProvider } from "@/context/language.context";
 import { MenuMobileContextProvider } from "@/context/menuMobile.context";
@@ -64,6 +67,10 @@ export default function RootLayout({
                 <Navbar />
 
                 {children}
+                <AssistantChatContextProvider>
+                  <AssistantButton />
+                  <AssistantChat />
+                </AssistantChatContextProvider>
                 <Footer />
               </LanguageContextProvider>
             </ModalOpenContextProvider>
