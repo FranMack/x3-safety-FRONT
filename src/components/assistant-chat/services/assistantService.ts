@@ -1,3 +1,4 @@
+import { envs } from "@/config/envs";
 
 interface QuestionProps{
     userId:string;
@@ -7,7 +8,7 @@ interface QuestionProps{
 export class AssistantService {
   static async sendQuestion(questionInfo:QuestionProps) {
     try {
-     const response= await fetch(`http://localhost:3000/api/assistant/chat`, {
+     const response= await fetch(`${envs.API_DOMAIN}/api/assistant/chat`, {
         method: "POST",
         body: JSON.stringify(questionInfo),
         headers: { "Content-Type": "application/json" },
