@@ -18,7 +18,7 @@ export const AssistantButton = () => {
         <Image
           fill
           className="object-cover animate-jumping"
-          src="/chatbot-webp"
+          src="/chatbot.webp"
           alt="whats up image"
         />
       </div>
