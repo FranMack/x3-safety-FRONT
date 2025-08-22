@@ -282,3 +282,65 @@ export const MarksIcon = () => {
     </svg>
   );
 };
+
+interface IconOptions {
+  onClick?: () => void;
+  color?: string;
+}
+
+export function CrossIcon({ onClick }: IconOptions) {
+  return (
+    <svg
+      onClick={onClick}
+      height="100%"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path
+          d="M19 5L5 19M5.00001 5L19 19"
+          stroke="#000000"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        ></path>{" "}
+      </g>
+    </svg>
+  );
+}
+
+export function SendMessageIcon() {
+  return (
+    <svg
+      viewBox="-6 -6 36.00 36.00"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      height="70%"
+    >
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        {" "}
+        <path
+          d="M22 2L2 8.66667L11.5833 12.4167M22 2L15.3333 22L11.5833 12.4167M22 2L11.5833 12.4167"
+          stroke="#ffff"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        ></path>{" "}
+      </g>
+    </svg>
+  );
+}

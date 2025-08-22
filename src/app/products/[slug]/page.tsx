@@ -10,12 +10,14 @@ import { notFound } from "next/navigation";
 import { FaCheck } from "react-icons/fa";
 import logo from "../../../../public/favicon.png";
 interface Props {
-  params: { id: number }; // 'params' es un objeto que contiene el 'id'
+  params: { id: number; slug: string }; // 'params' es un objeto que contiene el 'id'
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id } = params;
-  const product = productsInfo[id - 1];
+  const { slug } = params;
+  const product = productsInfo.find((item) => {
+    return item.slug.trim() === slug.trim();
+  });
 
   if (!product) {
     return {
@@ -44,7 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           alt: product.name,
         },
       ],
-      url: `${envs.DOMAIN}/products/${id}`,
+      url: `${envs.DOMAIN}/products/${slug}`,
       type: "website", // ← "product" no está permitido en el tipo de Next.js
       locale: "es_ES",
     },
@@ -56,7 +58,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     category: product.category,
     alternates: {
-      canonical: `${envs.DOMAIN}/products/${id}`,
+      canonical: `${envs.DOMAIN}/products/${slug}`,
     },
   };
 }
@@ -68,9 +70,11 @@ export const viewport = {
 };
 
 const ProductPage = ({ params }: Props) => {
-  const { id } = params;
+  const { slug } = params;
 
-  const product = productsInfo[id - 1];
+  const product = productsInfo.find((item) => {
+    return item.slug.trim() === slug.trim();
+  });
   if (!product) return notFound();
   const cookieStore = cookies();
 
