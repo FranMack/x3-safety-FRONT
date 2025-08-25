@@ -40,6 +40,12 @@ export const metadata: Metadata = {
     images: `${envs.DOMAIN}/favicon.png`,
   },
   authors: { name: "X3 Safety", url: `${envs.DOMAIN}` },
+    alternates: {
+    canonical: `${envs.DOMAIN}`,
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 // 👇 Agregá esto afuera del export de metadata
@@ -55,10 +61,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.png" />
-        <link rel="canonical" href={`${envs.DOMAIN}`} />
-      </head>
+     
       <body className={barlow.className}>
         <FilterProductsContextProvider>
           <MenuMobileContextProvider>
