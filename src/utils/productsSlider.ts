@@ -40,9 +40,9 @@ export const productSliderInfo = [
   {
     image: slider4,
     title: "Pinza P&P",
-    text:
-    "Designed for the safe holding and release of components in industrial environments.",
-    texto: "Diseñada para la sujeción y liberación segura de componentes en entornos industriales.",
+    text: "Designed for the safe holding and release of components in industrial environments.",
+    texto:
+      "Diseñada para la sujeción y liberación segura de componentes en entornos industriales.",
     path: "/products/12",
     mobileImage: mobileSlider3,
   },

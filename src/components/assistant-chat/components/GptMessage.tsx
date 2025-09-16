@@ -35,9 +35,9 @@ export const GptMessage = ({ text }: Props) => {
         <div className="flex items-center justify-center h-16 w-16  text-[1.5rem] rounded-full bg-primary text-white flex-shrink-0">
           X3
         </div>
-      <div className="relative ml-3 mr-3 max-w-[82%] text-lg bg-primary bg-opacity-25 pt-3 pb-2 px-4 shadow rounded-xl break-words">
-  <Linkify text={text} />
-</div>
+        <div className="relative ml-3 mr-3 max-w-[82%] text-lg bg-primary bg-opacity-25 pt-3 pb-2 px-4 shadow rounded-xl break-words">
+          <Linkify text={text} />
+        </div>
       </div>
     </div>
   );
