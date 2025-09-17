@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
 
     // Enviar correo
     await sendEmail({
-      to: envs.MAILER_EMAIL, // Receptor del correo
+      to: envs.MAILER_RECEPTOR, // Receptor del correo
       subject: "Nuevo mensaje de contacto",
       htmlBody: htmlBody,
     });
