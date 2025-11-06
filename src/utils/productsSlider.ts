@@ -15,7 +15,7 @@ export const productSliderInfo = [
     text: "Designed to provide maximum protection to operators in each task. Keep your hands safe and protected, away from any risk of impact.",
     texto:
       "Diseñado para brindar máxima protección a los operadores en cada tarea. Mantené tus manos seguras y protegidas, lejos de cualquier riesgo de impacto.",
-    path: "/products/2",
+    path: "/products/hit_safe",
     mobileImage: mobileSlider2,
   },
   {
@@ -24,7 +24,7 @@ export const productSliderInfo = [
     text: "Designed to move loads safely, avoiding crushing, cuts and entrapment. Take care of your hands, protect your equipment.",
     texto:
       "The tool has been specifically designed to provide protection to the operator's hand during use of the Stilson wrench.",
-    path: "/products/7",
+    path: "/products/stilson_safety_guard",
     mobileImage: mobileSlider1,
   },
 
@@ -34,7 +34,7 @@ export const productSliderInfo = [
     text: "Designed to move loads safely, avoiding crushing, cuts and entrapment. Take care of your hands, protect your equipment.",
     texto:
       "Diseñado para mover cargas con seguridad, evitando aplastamientos, cortes y atrapamientos. Cuida tus manos, protege tu equipo.",
-    path: "/products/1",
+    path: "/products/pyp",
     mobileImage: mobileSlider4,
   },
   {
@@ -43,7 +43,7 @@ export const productSliderInfo = [
     text: "Designed for the safe holding and release of components in industrial environments.",
     texto:
       "Diseñada para la sujeción y liberación segura de componentes en entornos industriales.",
-    path: "/products/12",
+    path: "/products/pinza_pyp",
     mobileImage: mobileSlider3,
   },
 ];
