@@ -24,10 +24,10 @@ export const ProductItem = ({
   return (
     <div
       key={name}
-      className="relative h-[60vh] md:h-[70vh] lg:h-[60vh] rounded-[12px] shadow-lg overflow-hidden"
+      className="relative flex flex-col h-[60vh] md:h-[70vh] lg:h-[60vh] rounded-[12px] shadow-lg overflow-hidden"
     >
       {/* Imagen con Skeleton */}
-      <div className="w-full h-[70%] md:h-[55%] lg:h-[70%] overflow-hidden relative">
+      <div className="w-full h-[62%] md:h-[55%] lg:h-[62%] shrink-0 overflow-hidden relative">
         {isLoading && (
           <div className="absolute inset-0 bg-gray-200 animate-pulse h-full flex justify-center items-center">
             <HashLoader color={"white"} speedMultiplier={0.4} />
@@ -44,16 +44,16 @@ export const ProductItem = ({
       </div>
 
       {/* Información del Producto */}
-      <div className=" h-[30%] md:h-[45%] lg:h-[30%] p-4 text-[1.4rem] md:text-[1.3rem] lg:text-[1.4rem]  flex flex-col justify-center">
-        <h3 className="text-[1.8rem] md:text-[1.6rem] lg:text-[1.8rem]  font-semibold mb-1 text-gray-700">
+      <div className="flex-1 min-h-0 p-4 text-[1.4rem] md:text-[1.3rem] lg:text-[1.4rem] flex flex-col">
+        <h3 className="text-[1.8rem] md:text-[1.6rem] lg:text-[1.8rem]  font-semibold mb-1 text-gray-700 line-clamp-1">
           {name}
         </h3>
-        <p className="text-gray-600 mb-4">
+        <p className="text-gray-600 line-clamp-2 mb-2">
           {language === "spanish" ? descripcion : description}
         </p>
         <button
           onClick={handleNavigate}
-          className="w-fit bg-primary text-white px-4 py-2 rounded hover:bg-gray-600"
+          className="mt-auto w-fit shrink-0 bg-primary text-white px-4 py-2 rounded hover:bg-gray-600"
         >
           {language === "spanish" ? "Ver más" : "View more"}
         </button>

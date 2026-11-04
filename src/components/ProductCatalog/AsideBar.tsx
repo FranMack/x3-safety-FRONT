@@ -49,7 +49,7 @@ export const AsideBar = () => {
 
   return (
     <>
-      <aside className="hidden md:flex fixed w-[22%] md:w-[30%] lg:w-[22%] h-[100vh] pt-[20vh] z-100  flex-col items-center gap-y-[5vh] bg-primary bg-opacity-10 leftReveal ">
+      <aside className="hidden md:flex fixed w-[22%] md:w-[30%] lg:w-[22%] h-[100vh] pt-[20vh] z-10 flex-col items-center gap-y-[5vh] bg-primary bg-opacity-10 leftReveal ">
         <h3 className="text-[2rem] lg:text-[2.5rem] font-semibold  w-[70%] ">
           {language === "spanish" ? titulo : title}{" "}
         </h3>
