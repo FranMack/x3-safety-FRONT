@@ -10,21 +10,24 @@ const categories = [
     item: "Show all",
   },
   {
-    articulo: "Bastón Balizador",
-    item: "Safety Guiding Stick ",
-  },
-
-  {
-    articulo: "Calzas Ergonómicas",
-    item: "Ergonomic Wedges",
+    articulo: "Línea P&P",
+    item: "P&P Line",
   },
   {
-    articulo: "Equipamientos ergonómicos",
-    item: "Ergonomic Equipment",
+    articulo: "Señalización",
+    item: "Signaling",
   },
   {
     articulo: "Manipulación de tubos",
     item: "Pipe handling",
+  },
+  {
+    articulo: "Manejo de cargas",
+    item: "Load handling",
+  },
+  {
+    articulo: "Mantenimiento",
+    item: "Maintenance",
   },
 ];
 
@@ -39,6 +42,7 @@ export const AsideBar = () => {
 
   const handleSelected = (tab: string) => {
     handleCategoryChange(tab);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const [openFilters, setOpenFilters] = useState<boolean>(false);

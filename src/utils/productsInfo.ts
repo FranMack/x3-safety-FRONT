@@ -84,7 +84,7 @@ export const productsInfo = [
     id: 1,
     name: "P&P",
     slug: "pyp",
-    category: "Bastón Balizador",
+    category: "Línea P&P",
     descripcion: "Creada para mover cargas, evitando golpes.",
     description: "Created to move loads, avoiding impacts.",
     descripcion2:
@@ -116,7 +116,7 @@ export const productsInfo = [
     id: 2,
     name: "Pinza P&P ",
     slug: "pinza_pyp",
-    category: "Bastón Balizador",
+    category: "Línea P&P",
     descripcion:
       "Diseñada para la sujeción y liberación segura de componentes en entornos industriales",
     description:
@@ -150,7 +150,7 @@ export const productsInfo = [
     id: 3,
     name: "P&P XL",
     slug: "pyp_xl",
-    category: "Bastón Balizador",
+    category: "Línea P&P",
     descripcion:
       "Diseñada para acompañar, mover y acomodar cargas elevadas manteniendo una distancia segura",
     description:
@@ -184,7 +184,7 @@ export const productsInfo = [
     id: 4,
     name: "Telescopic Barrier",
     slug: "telescopic_barrier",
-    category: "Bastón Balizador",
+    category: "Señalización",
     descripcion:
       "Diseñada para crear una delimitación segura entre conos de señalización",
     description:
@@ -215,7 +215,7 @@ export const productsInfo = [
     id: 5,
     name: "Truck Lock",
     slug: "truck_lock",
-    category: "Calzas Ergonómicas",
+    category: "Manejo de cargas",
     descripcion: "Diseñada para inmovilizar vehículos",
     description: "Designed to immobilize vehicles.",
     descripcion2:
@@ -245,7 +245,7 @@ export const productsInfo = [
     id: 6,
     name: "Hit Safe",
     slug: "hit_safe",
-    category: "Equipamientos ergonómicos",
+    category: "Mantenimiento",
     descripcion: "Creada para evitar el impacto en las manos.",
     description: "Created to avoid hand impact.",
     descripcion2:
@@ -277,7 +277,7 @@ export const productsInfo = [
     id: 7,
     name: "Espatula pesada",
     slug: "espatula_pesada",
-    category: "Equipamientos ergonómicos",
+    category: "Mantenimiento",
     descripcion:
       "Ideal para limpieza intensiva en bowls y superficies industriales.",
     description:
@@ -310,7 +310,7 @@ export const productsInfo = [
     id: 8,
     name: "Azada limpia lengüetas",
     slug: "azada_limpia_lenguetas",
-    category: "Equipamientos ergonómicos",
+    category: "Mantenimiento",
     descripcion:
       "Ideal para la limpieza de lenguetas en aplicaciones industriales",
     description: "Ideal for cleaning tabs in industrial applications",
@@ -343,7 +343,7 @@ export const productsInfo = [
     id: 9,
     name: "Palanca ergonómica para contenedores",
     slug: "palanca_ergonomica_contenedores",
-    category: "Equipamientos ergonómicos",
+    category: "Manejo de cargas",
     descripcion:
       "Diseñada para facilitar la apertura y cierre de contenedores marítimos e industriales",
     description:
@@ -379,7 +379,7 @@ export const productsInfo = [
     id: 10,
     name: "Palanca separadora de atados",
     slug: "palanca_separadora_atados",
-    category: "Equipamientos ergonómicos",
+    category: "Manejo de cargas",
     descripcion:
       "Diseñada para separar atados de barras de acero durante las operaciones de izaje",
     description:
@@ -414,7 +414,7 @@ export const productsInfo = [
     id: 11,
     name: "Stheet positioner",
     slug: "stheet_positioner",
-    category: "Equipamientos ergonómicos",
+    category: "Manejo de cargas",
     descripcion:
       "Diseñada para guiar y posicionar paquetes de chapa durante su manipulación con puente grúa",
     description:
@@ -450,7 +450,7 @@ export const productsInfo = [
     id: 12,
     name: "Unlockbolt",
     slug: "unlockbolt",
-    category: "Equipamientos ergonómicos",
+    category: "Mantenimiento",
     descripcion:
       "Diseñado para facilitar la liberación y accionamiento de pernos de bloqueo con mayor alcance y seguridad",
     description:
@@ -481,7 +481,7 @@ export const productsInfo = [
     id: 13,
     name: "Hydrogauge",
     slug: "hydrogauge",
-    category: "Equipamientos ergonómicos",
+    category: "Mantenimiento",
     descripcion:
       "Instrumento de medición manual para determinar el nivel de fluidos en recipientes y tanques",
     description:
@@ -518,7 +518,7 @@ export const productsInfo = [
     id: 14,
     name: "Fork Hook",
     slug: "fork_hook",
-    category: "Equipamientos ergonómicos",
+    category: "Manejo de cargas",
     descripcion:
       "Diseñada para la movilización segura de cargas livianas de hasta 1.000 kg mediante autoelevador",
     description:
@@ -706,7 +706,7 @@ export const productsInfo = [
     id: 20,
     name: "P&P Holder Spray",
     slug: "pyp_holder_spray",
-    category: "Bastón Balizador",
+    category: "Línea P&P",
     descripcion: "Marcado a distancia con aerosol de forma segura y precisa",
     description: "Safe and precise remote marking with spray paint",
     descripcion2:
@@ -737,7 +737,7 @@ export const productsInfo = [
     id: 21,
     name: "P&P Scanner",
     slug: "pyp_scanner",
-    category: "Bastón Balizador",
+    category: "Línea P&P",
     descripcion: "Amplía el alcance del scanner Zebra a distintas alturas y ángulos",
     description: "Extends the reach of the Zebra scanner at different heights and angles",
     descripcion2:
@@ -766,7 +766,7 @@ export const productsInfo = [
     id: 22,
     name: "Puntera Espátula",
     slug: "puntera_espatula",
-    category: "Bastón Balizador",
+    category: "Línea P&P",
     descripcion: "Accesorio para alcanzar y limpiar zonas distantes sin escaleras",
     description: "Accessory to reach and clean distant areas without ladders",
     descripcion2:
@@ -795,7 +795,7 @@ export const productsInfo = [
     id: 23,
     name: "P&P Telescópico",
     slug: "pyp_telescopico",
-    category: "Bastón Balizador",
+    category: "Línea P&P",
     descripcion: "Acompaña, mueve y acomoda cargas elevadas a distancia segura",
     description: "Guides, moves and positions elevated loads from a safe distance",
     descripcion2:

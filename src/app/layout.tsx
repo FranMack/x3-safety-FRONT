@@ -70,10 +70,10 @@ export default function RootLayout({
                 <Navbar />
 
                 {children}
-                <AssistantChatContextProvider>
+               { /*<AssistantChatContextProvider>
                   <AssistantButton />
                   <AssistantChat />
-                </AssistantChatContextProvider>
+                </AssistantChatContextProvider>*/}
                 <Footer />
               </LanguageContextProvider>
             </ModalOpenContextProvider>
