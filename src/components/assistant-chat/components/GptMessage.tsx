@@ -5,7 +5,7 @@ interface Props {
 const Linkify = ({ text }: { text: string }) => {
   // Detecta solo URLs que empiecen con http:// o https://
   const urlRegex = /(https?:\/\/[^\s]+)/g;
-  const parts = text.split(urlRegex);
+  const parts = String(text ?? "").split(urlRegex);
 
   return (
     <>

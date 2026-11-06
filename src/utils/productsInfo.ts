@@ -71,6 +71,14 @@ import forkHook from "../../public/products-image/Fork_Hook/Fork-Hook.webp";
 
 import telescopicBarrier from "../../public/products-image/Telescopic-Barrier/Telescopic-Barrier-1080px.webp";
 
+import pypHolderSpray from "../../public/products-image/P&P_Holder Spray/P&P-holder-spray.webp";
+
+import pypScanner from "../../public/products-image/P&P Scanner/P&P-Scanner-1080px Editada IA.webp";
+
+import punteraEspatula from "../../public/products-image/Puntera Espátula/Puntera-Espátula-1080px-Original Editada IA.webp";
+
+import pypTelescopico from "../../public/products-image/P&P Telescópico/P&P-Telescopico-1080px-Editada IA.webp";
+
 export const productsInfo = [
   {
     id: 1,
@@ -164,7 +172,7 @@ export const productsInfo = [
       "Packaging dimensions may vary depending on the product.",
     ],
     image: pypXL1,
-    pdf: "https://drive.google.com/file/d/1Awn5u8ZmadynQAtJoDLCloHOSzacIMTX/view?usp=sharing",
+    pdf: "https://drive.google.com/file/d/1KKZAdGTdALDdV2GTu2DV0XxpSgKFP3Md/view?usp=sharing",
     videoId: "",
     gallery: [
       { path: pypXL1, title: "P&P XL" },
@@ -198,7 +206,7 @@ export const productsInfo = [
       "Packaging dimensions may vary depending on the presentation format.",
     ],
     image: telescopicBarrier,
-    pdf: "",
+    pdf: "https://drive.google.com/file/d/1shx1kdyh2g0rbt1BrfSoLLDQKiLII2tE/view?usp=sharing",
     videoId: "",
     gallery: [{ path: telescopicBarrier, title: "Telescopic Barrier" }],
   },
@@ -357,7 +365,7 @@ export const productsInfo = [
       "Packaging dimensions may vary depending on the model and the quantity of units requested.",
     ],
     image: palancaContenedores,
-    pdf: "https://drive.google.com/file/d/1WfMQ358eKX75obQeSS0udApO0OZYfWMx/view?usp=sharing",
+    pdf: "https://drive.google.com/file/d/1MzuTdRO2KqqdfIM0YWxg4gYA4ZUOiTtK/view?usp=sharing",
     videoId: "",
     gallery: [
       {
@@ -393,7 +401,7 @@ export const productsInfo = [
       "Packaging dimensions may vary depending on the product.",
     ],
     image: palancaSeparadoraAtados1,
-    pdf: "https://drive.google.com/file/d/1VR0L6JJr86Tn0IvFVYIvvArsjCpzNvei/view?usp=sharing",
+    pdf: "https://drive.google.com/file/d/1J5dCtjPYslfAL2Yui26WAFiMZxn7oyh-/view?usp=sharing",
     videoId: "",
     gallery: [
       { path: palancaSeparadoraAtados1, title: "Palanca separadora de atados" },
@@ -430,7 +438,7 @@ export const productsInfo = [
       "Packaging dimensions may vary depending on the product.",
     ],
     image: stheetPositioner1,
-    pdf: "https://drive.google.com/file/d/1LDrBqnMB454AU35hDHYoBb9pgjySL-M3/view?usp=sharing",
+    pdf: "https://drive.google.com/file/d/1J__D0N4Ys4skbGQ8LEFeL0bn87_KWnt1/view?usp=sharing",
     videoId: "",
     gallery: [
       { path: stheetPositioner1, title: "Stheet positioner" },
@@ -464,7 +472,7 @@ export const productsInfo = [
       "Packaging dimensions may vary depending on the quantity of units requested.",
     ],
     image: unlockBolt,
-    pdf: "https://drive.google.com/file/d/1mXJEMpOsIe9H7ZHifkO0jmN81cwp0iFX/view?usp=sharing",
+    pdf: "https://drive.google.com/file/d/1sDk30NMj-VgJ2WoyyOpHTWB0cg-vXO1k/view?usp=sharing",
     videoId: "",
     gallery: [{ path: unlockBolt, title: "Unlockbolt" }],
   },
@@ -497,7 +505,7 @@ export const productsInfo = [
       "Packaging dimensions may vary depending on the product.",
     ],
     image: Hydrogauge1,
-    pdf: "https://drive.google.com/file/d/1c-Kd9Ndw5dzcmG_NONEGGshQH8PHKgTW/view?usp=sharing",
+    pdf: "https://drive.google.com/file/d/1iB4OWbVQlaVX3Gqs3SotNcTZt0cB1cNh/view?usp=sharing",
     videoId: "",
     gallery: [
       { path: Hydrogauge1, title: "Hydrogauge" },
@@ -532,7 +540,7 @@ export const productsInfo = [
       "Packaging dimensions may vary depending on the product.",
     ],
     image: forkHook,
-    pdf: "",
+    pdf: "https://drive.google.com/file/d/1kq9SrnHSDHZIHtCtVTjFEdq65EBZKttj/view?usp=sharing",
     videoId: "",
     gallery: [{ path: forkHook, title: "Fork Hook" }],
   },
@@ -692,5 +700,123 @@ export const productsInfo = [
       { path: grinfa3, title: "Grinfa movil" },
       { path: grinfa4, title: "Grinfa movil" },
     ],
+  },
+
+  {
+    id: 20,
+    name: "P&P Holder Spray",
+    slug: "pyp_holder_spray",
+    category: "Bastón Balizador",
+    descripcion: "Marcado a distancia con aerosol de forma segura y precisa",
+    description: "Safe and precise remote marking with spray paint",
+    descripcion2:
+      "Herramienta diseñada específicamente para facilitar el marcado a distancia con aerosol, permitiendo al operario realizar tareas de señalización con mayor seguridad, alcance y precisión. Cuenta con un soporte adaptable en el cual se inserta el aerosol, permitiendo su activación desde una distancia segura y minimizando la exposición a zonas riesgosas o de difícil acceso.",
+    description2:
+      "A tool designed specifically to facilitate remote marking with spray paint, allowing the operator to perform marking tasks with greater safety, reach and precision. It features an adaptable holder in which the spray can is inserted, allowing activation from a safe distance and minimizing exposure to hazardous or hard-to-reach areas.",
+    descripcionItems: [
+      "Modelos disponibles: PHS30 (largo 3 metros) y PHS15 (largo 1 metro y medio).",
+      "Materiales: aluminio y polímero.",
+      "Diseño ergonómico y extensible, ideal para aplicaciones industriales, obras, señalización vial y mantenimiento en altura.",
+      "Mantenimiento: controlar la tensión del cable y, si es necesario, estirarlo con los reguladores; mantener la herramienta limpia y en zona segura.",
+      "Dimensión del producto según el modelo solicitado. Las medidas del embalaje pueden variar según el producto.",
+    ],
+    descriptionItems: [
+      "Available models: PHS30 (3 m length) and PHS15 (1.5 m length).",
+      "Materials: aluminum and polymer.",
+      "Ergonomic and extendable design, ideal for industrial applications, construction sites, road marking and maintenance at height.",
+      "Maintenance: check the cable tension and, if necessary, stretch it using the adjusters; keep the tool clean and in a safe area.",
+      "Product dimensions depend on the requested model. Packaging dimensions may vary depending on the product.",
+    ],
+    image: pypHolderSpray,
+    pdf: "",
+    videoId: "",
+    gallery: [{ path: pypHolderSpray, title: "P&P Holder Spray" }],
+  },
+
+  {
+    id: 21,
+    name: "P&P Scanner",
+    slug: "pyp_scanner",
+    category: "Bastón Balizador",
+    descripcion: "Amplía el alcance del scanner Zebra a distintas alturas y ángulos",
+    description: "Extends the reach of the Zebra scanner at different heights and angles",
+    descripcion2:
+      "Herramienta desarrollada para ampliar el alcance y la versatilidad del scanner Zebra, permitiendo realizar lecturas a diferentes alturas, distancias y ángulos sin comprometer la precisión ni la comodidad del operario. Su diseño robusto y ergonómico facilita el trabajo en entornos industriales exigentes, optimizando tiempos y mejorando la eficiencia operativa.",
+    description2:
+      "A tool developed to extend the reach and versatility of the Zebra scanner, allowing readings at different heights, distances and angles without compromising the operator's accuracy or comfort. Its robust and ergonomic design makes work easier in demanding industrial environments, optimizing time and improving operational efficiency.",
+    descripcionItems: [
+      "Modelo único (longitud máxima: 2 metros).",
+      "Materiales: tubo de aluminio liviano y de alta resistencia mecánica; polímero ABS en componentes estructurales y de sujeción.",
+      "Acabado superficial: pintura epoxi horneada, resistente al desgaste, a la corrosión y a agentes químicos presentes en ambientes industriales.",
+      "Dimensión del embalaje: 1 metro x 10 cm x 10 cm.",
+    ],
+    descriptionItems: [
+      "Single model (maximum length: 2 meters).",
+      "Materials: lightweight, high mechanical strength aluminum tube; ABS polymer in structural and clamping components.",
+      "Surface finish: baked epoxy paint, resistant to wear, corrosion and chemical agents present in industrial environments.",
+      "Packaging dimensions: 1 meter x 10 cm x 10 cm.",
+    ],
+    image: pypScanner,
+    pdf: "https://drive.google.com/file/d/1Uh4GFcakHdhQaGa1urTECIYt59VP5ciM/view?usp=sharing",
+    videoId: "",
+    gallery: [{ path: pypScanner, title: "P&P Scanner" }],
+  },
+
+  {
+    id: 22,
+    name: "Puntera Espátula",
+    slug: "puntera_espatula",
+    category: "Bastón Balizador",
+    descripcion: "Accesorio para alcanzar y limpiar zonas distantes sin escaleras",
+    description: "Accessory to reach and clean distant areas without ladders",
+    descripcion2:
+      "La puntera de espátula es un accesorio diseñado para acoplarse al bastón telescópico P&P, permitiendo al operario alcanzar áreas distantes y realizar tareas propias de una espátula convencional. Esta combinación facilita la remoción de materiales o la limpieza en zonas de difícil acceso sin necesidad de utilizar escaleras, mejorando la seguridad y eficiencia en el trabajo.",
+    description2:
+      "The spatula tip is an accessory designed to attach to the P&P telescopic pole, allowing the operator to reach distant areas and perform the tasks of a conventional spatula. This combination makes it easier to remove materials or clean hard-to-reach areas without the need for ladders, improving safety and efficiency at work.",
+    descripcionItems: [
+      "Modelo único.",
+      "Materiales: acero inoxidable AISI 304 y anclaje de aluminio.",
+      "Dimensión del producto según el modelo solicitado.",
+      "Las medidas del embalaje pueden variar según el producto.",
+    ],
+    descriptionItems: [
+      "Single model.",
+      "Materials: AISI 304 stainless steel and aluminum anchor.",
+      "Product dimensions depend on the requested model.",
+      "Packaging dimensions may vary depending on the product.",
+    ],
+    image: punteraEspatula,
+    pdf: "https://drive.google.com/file/d/1nb2pzJvsslfje36OvDkV4WB2zlUMsX4V/view?usp=sharing",
+    videoId: "",
+    gallery: [{ path: punteraEspatula, title: "Puntera Espátula" }],
+  },
+
+  {
+    id: 23,
+    name: "P&P Telescópico",
+    slug: "pyp_telescopico",
+    category: "Bastón Balizador",
+    descripcion: "Acompaña, mueve y acomoda cargas elevadas a distancia segura",
+    description: "Guides, moves and positions elevated loads from a safe distance",
+    descripcion2:
+      "La herramienta fue creada para acompañar, mover y acomodar cargas elevadas, logrando que el operario mantenga una distancia que servirá de seguridad.",
+    description2:
+      "The tool was created to guide, move and position elevated loads, allowing the operator to keep a distance that serves as a safety margin.",
+    descripcionItems: [
+      "Modelo: PPTI24 – largo de 1,60 a 2,40 mts.",
+      "Materiales: tubo de aluminio.",
+      "Acabado: pintura horneada.",
+      "Las medidas del embalaje pueden variar según el producto.",
+    ],
+    descriptionItems: [
+      "Model: PPTI24 – length from 1.60 to 2.40 m.",
+      "Materials: aluminum tube.",
+      "Finish: baked paint.",
+      "Packaging dimensions may vary depending on the product.",
+    ],
+    image: pypTelescopico,
+    pdf: "https://drive.google.com/file/d/1L-HX-odGxH_22U198iw68QU_Pscf4Mxe/view?usp=sharing",
+    videoId: "",
+    gallery: [{ path: pypTelescopico, title: "P&P Telescópico" }],
   },
 ];
