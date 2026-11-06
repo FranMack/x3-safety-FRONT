@@ -1,8 +1,8 @@
 import { Footer, Navbar } from "@/components";
-import { AssistantChat } from "@/components/assistant-chat/AssistantChat";
-import { AssistantButton } from "@/components/commons/AssistantButton";
+//import { AssistantChat } from "@/components/assistant-chat/AssistantChat";
+//import { AssistantButton } from "@/components/commons/AssistantButton";
 import { envs } from "@/config/envs";
-import { AssistantChatContextProvider } from "@/context/assistantChat.contex";
+//import { AssistantChatContextProvider } from "@/context/assistantChat.contex";
 import { FilterProductsContextProvider } from "@/context/filterProduct.context";
 import { LanguageContextProvider } from "@/context/language.context";
 import { MenuMobileContextProvider } from "@/context/menuMobile.context";
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     images: `${envs.DOMAIN}/favicon.png`,
   },
   authors: { name: "X3 Safety", url: `${envs.DOMAIN}` },
-    alternates: {
+  alternates: {
     canonical: `${envs.DOMAIN}`,
   },
   icons: {
@@ -61,7 +61,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-     
       <body className={barlow.className}>
         <FilterProductsContextProvider>
           <MenuMobileContextProvider>
@@ -70,7 +69,7 @@ export default function RootLayout({
                 <Navbar />
 
                 {children}
-               { /*<AssistantChatContextProvider>
+                {/*<AssistantChatContextProvider>
                   <AssistantButton />
                   <AssistantChat />
                 </AssistantChatContextProvider>*/}
